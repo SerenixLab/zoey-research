@@ -15,6 +15,11 @@ Research placement means:
 - [`METHOD.md`](METHOD.md): classifications, evaluation rubric, research sequence, and claim boundaries.
 - [`CANDIDATE_REGISTER.md`](CANDIDATE_REGISTER.md): the authoritative index of external candidates that have entered review.
 
+Active capability-family research:
+
+- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): first Priority A research family, bounded to pattern extraction and current-frontier support.
+
 Current external capability records:
 
+- [`XTDB`](external-capabilities/xtdb/ASSESSMENT.md): first deep-review candidate for bitemporal projections and stale-basis mechanisms; researching, not adopted.
 - [`Qwen3-TTS`](external-capabilities/qwen3-tts/ASSESSMENT.md): high-priority future voice candidate; watchlisted, not adopted.

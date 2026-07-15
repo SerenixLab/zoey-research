@@ -10,6 +10,7 @@ The candidate must also be linked from `../CANDIDATE_REGISTER.md` and evaluated 
 
 Candidate status terms:
 
+- `researching`: source-bounded review is active; no experiment or implementation is authorized;
 - `watchlisted`: worth monitoring; no implementation is active;
 - `workbench-candidate`: bounded experimentation is justified but not yet started;
 - `under-evaluation`: an explicitly governed workbench is producing evidence;

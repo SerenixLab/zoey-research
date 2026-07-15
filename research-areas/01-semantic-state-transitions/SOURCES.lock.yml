@@ -1,0 +1,70 @@
+schema_version: 1
+research_area: semantic-state-transitions
+capability_area: 1
+reviewed_at: 2026-07-15
+
+disposition:
+  architecture_selected: false
+  storage_selected: false
+  active_workbench: false
+  formal_evaluation: false
+
+registered_candidates:
+  - register_id: EXT-STATE-001
+    repository: https://github.com/xtdb/xtdb
+    reviewed_commit: e98610e1de12074d17943aa282b4a0391539de33
+    role: first-deep-review-candidate
+
+unregistered_search_shortlist:
+  - repository: https://github.com/statelyai/xstate
+    verified_commit: c25dba07a2b68565edbe83d83c5d679dd85e00b2
+    role: lifecycle-and-model-testing-search-hit
+  - repository: https://github.com/getzep/graphiti
+    verified_commit: 526dcad7a300f3c5c506ff96a68bcdc7ca9f97ed
+    role: episode-provenance-and-temporal-graph-search-hit
+  - repository: https://github.com/terminusdb/terminusdb
+    verified_commit: d2249d171ea5f287dbb882cd8f1826b99c57e282
+    role: versioned-semantic-diff-search-hit
+  - repository: https://github.com/kurrent-io/KurrentDB
+    verified_commit: 67a6419ef9d5b8dc5496722f3dd3f7b5e5d54f8a
+    role: expected-basis-event-store-search-hit
+
+paper_only_watch:
+  - title: "WorldDB: A Vector Graph-of-Worlds Memory Engine with Ontology-Aware Write-Time Reconciliation"
+    url: https://arxiv.org/abs/2604.18478
+    arxiv_id: "2604.18478"
+    inspected_version: v1
+    implementation_repository: null
+    role: paper-only-pattern-source
+
+legacy_checkouts:
+  - name: Iris / Specialized-LLM
+    path: legacy/Specialized-LLM
+    inspected_commit: 84bea3fbaca81198603885a086b72b5978bab55e
+    inspected_files_clean_against_commit: true
+    repository_worktree_clean: false
+  - name: Yuki
+    path: legacy/Yuki
+    inspected_commit: 55f464d28cb06073d78fda20ec32b702aee3dac5
+    inspected_files_clean_against_commit: true
+    repository_worktree_clean: false
+
+current_official_documentation:
+  - name: XTDB time model
+    url: https://docs.xtdb.com/about/time-in-xtdb.html
+  - name: XState guards
+    url: https://stately.ai/docs/guards
+  - name: XState persistence
+    url: https://stately.ai/docs/persistence
+  - name: Graphiti repository overview
+    url: https://github.com/getzep/graphiti
+  - name: TerminusDB version control documentation
+    url: https://terminusdb.org/docs/topics/version-control/
+  - name: KurrentDB appending events
+    url: https://docs.kurrent.io/clients/java/v1.2/appending-events
+
+secondary_names_not_source_inspected:
+  - langchain-ai/langgraph
+  - temporalio/temporal
+  - automerge/automerge
+  - dolthub/dolt

@@ -1,0 +1,80 @@
+schema_version: 1
+candidate: xtdb
+register_id: EXT-STATE-001
+classification: external-capability-candidate
+classifications:
+  - architecture-reference
+  - pattern-extraction-source
+  - mechanism-candidate
+reviewed_at: 2026-07-15
+
+disposition:
+  status: researching
+  adopted_dependency: false
+  vendored_source: false
+  cloned_source: false
+  active_workbench: false
+  formal_compatibility_claim: false
+
+authoritative_upstream:
+  repository: https://github.com/xtdb/xtdb
+  branch: main
+  reviewed_commit: e98610e1de12074d17943aa282b4a0391539de33
+  reviewed_commit_date: 2026-07-15T09:04:56Z
+  role: authoritative-upstream
+  source_license: MPL-2.0
+
+revision_pinned_sources:
+  - name: time-model
+    path: docs/src/content/docs/about/time-in-xtdb.md
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/docs/src/content/docs/about/time-in-xtdb.md
+  - name: transaction-and-consistency-model
+    path: docs/src/content/docs/about/txs-in-xtdb.md
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/docs/src/content/docs/about/txs-in-xtdb.md
+  - name: sql-query-and-basis-reference
+    path: docs/src/content/docs/reference/main/sql/queries.md
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/docs/src/content/docs/reference/main/sql/queries.md
+  - name: sql-transaction-assert-and-erase-reference
+    path: docs/src/content/docs/reference/main/sql/txs.md
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/docs/src/content/docs/reference/main/sql/txs.md
+  - name: key-concepts-and-operational-constraints
+    path: docs/src/content/docs/concepts/key-concepts.md
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/docs/src/content/docs/concepts/key-concepts.md
+  - name: source-license
+    path: LICENSE
+    url: https://github.com/xtdb/xtdb/blob/e98610e1de12074d17943aa282b4a0391539de33/LICENSE
+
+moving_official_documentation:
+  - name: current-time-overview
+    url: https://docs.xtdb.com/about/time-in-xtdb.html
+    role: current-upstream-orientation-only
+  - name: current-sql-query-reference
+    url: https://docs.xtdb.com/reference/main/sql/queries.html
+    role: current-upstream-orientation-only
+
+legacy_comparison:
+  - name: Iris / Specialized-LLM
+    inspected_commit: 84bea3fbaca81198603885a086b72b5978bab55e
+    role: implemented-lifecycle-and-promotion-reference
+  - name: Yuki
+    inspected_commit: 55f464d28cb06073d78fda20ec32b702aee3dac5
+    role: current-playbook-snapshot-and-negative-history-reference
+
+zoey_governance_sources:
+  - path: meta/STATE_AND_CONTROL_MODEL.md
+    relevance: semantic distinctions, time, correction, provenance, erasure, concurrency
+  - path: meta/OPEN_QUESTIONS.md
+    relevance: MEM, EVAL, TRUST, and REPO activation gates
+  - path: meta/decisions/ADR-006-scn001-selected-slice-state-contract.md
+    relevance: selected-slice state/projection and direct-correction distinctions
+  - path: meta/decisions/ADR-007-scn001-selected-slice-dependency-identity.md
+    relevance: stable basis identity, use evidence, supersession, retirement, narrowing, conflict
+
+watch_topics:
+  - temporal query and transaction semantic changes
+  - snapshot-token portability and export behavior
+  - schema, foreign-key, and constraint support
+  - single-writer deployment and recovery characteristics
+  - erasure, backup, and restore behavior
+  - storage-format and migration compatibility
+  - license changes

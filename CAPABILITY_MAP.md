@@ -17,7 +17,7 @@ Baselines used for this revision:
 - `workbenches/scn001-selected-slice/README.md` current frontier;
 - initial, non-exhaustive inspection of Iris at `legacy/Specialized-LLM/` and Yuki at `legacy/Yuki/`.
 
-Both legacy lineages are locally available. This removes the access blocker for capability-bounded legacy audits, but no complete `LEG-001` migration inventory is claimed. Legacy entries below are signals to inspect, not reuse decisions.
+Both legacy lineages are locally available. This removes the access blocker for capability-bounded legacy audits, but no complete `LEG-001` migration inventory is claimed. Capability area 1 now has an initial reviewed legacy audit; legacy entries in every other area remain signals to inspect, not reuse decisions.
 
 ## Current project position
 
@@ -29,7 +29,7 @@ External research may proceed in parallel because no active question currently b
 
 | Area | Zoey need | Governing anchors | Current Zoey evidence | Initial legacy signals | External evidence needed |
 | --- | --- | --- | --- | --- | --- |
-| **1. Semantic state and transitions** | Preserve assertions, observations, hypotheses, candidates, active trials, outcomes, corrections, narrowing, and retirement as distinct states. | SCM; `ADR-003`, `ADR-006` | Selected-slice run state and transition evidence implemented through the focused-drill outcome. | Iris state-machine discipline and memory-candidate lifecycle; Yuki structured session events. | Event-sourced and temporal-state patterns, correction/supersession models, invariant-preserving lifecycle implementations. |
+| **1. Semantic state and transitions** | Preserve assertions, observations, hypotheses, candidates, active trials, outcomes, corrections, narrowing, and retirement as distinct states. | SCM; `ADR-003`, `ADR-006` | Selected-slice run state and transition evidence implemented through the focused-drill outcome; direct current-session correction remains unimplemented. | **Initially reviewed:** Iris implements fail-closed memory-candidate transitions, source binding, and review promotion; Yuki implements current playbook loading/inspection but not correction history. | Research family [`01-semantic-state-transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md) is active. XTDB is registered as `EXT-STATE-001` for bitemporal projection and stale-basis review; no mechanism is adopted. |
 | **2. Provenance and dependency lineage** | Reconstruct the exact evidence, effective state, actor, relation, and order used by a transition. | SCM; `ADR-006`, `ADR-007` | Stable scoped references, typed relations, source-binding checks, and passive inspection implemented for the slice. | Iris provenance/citation, artifact registry, and replay designs; Yuki retrieval traces and evidence artifacts. | Data-lineage and causal-provenance systems, historical dependency reconstruction, cycle/non-convergence handling. |
 | **3. Agent and behavioral evaluation** | Replayable scenarios, counterfactuals, nondeterministic campaigns, hard invariants, and oracle separation. | `ADR-002`, `ADR-004`, `ADR-005`, `ADR-009`; `EVAL-004/005` | Harness, simulator, fixtures, boundary tests, and engineering gates exist; no formal evaluation record or scoring contract exists. | Iris evaluation suite and replay specifications; Yuki evidence schemas and baseline soak plans. | Agent-evaluation harnesses, simulation environments, adversarial campaigns, formal evidence packaging, judge-calibration methods. |
 | **4. Behavior-configuration identity** | Bind behavior evidence to exact model, prompt, runtime, policy, context, and dependency configuration. | `ADR-007`; `EVAL-004`; `GROW-003/004` | Selected-slice dependency identity exists; formal behavior-configuration record is deferred. | Iris artifact/config registries and versioning rules; Yuki config snapshots and checkpoint manifests. | Experiment tracking, immutable configuration fingerprints, run comparison, replacement/continuity evidence. |
@@ -79,7 +79,7 @@ Every capability search must assess:
 
 ## Next research sequence
 
-1. Keep Priority A aligned with the active SCN-001 frontier and use it to strengthen engineering and evaluation evidence without altering semantics opportunistically.
+1. Continue [`01-semantic-state-transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md) as the first Priority A family, aligned with direct current-session correction and without broadening the accepted selected-slice semantics.
 2. Perform capability-bounded Iris/Yuki audits before each Priority B–D external search.
 3. Research one family at a time and register only reviewed candidates in `CANDIDATE_REGISTER.md`.
 4. Create a comparative extraction record before proposing any controlled experiment.
