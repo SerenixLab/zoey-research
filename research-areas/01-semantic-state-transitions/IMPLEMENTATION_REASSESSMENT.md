@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `current-frontier closure accepted after independent review`
+Status: `delayed-candidate trigger reassessed after independent review`
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baseline: `adf756a6765e433047574acec1d40e8da74005f4` on local `main`
+Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe` on local `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -108,6 +108,27 @@ no semantic identity.
     personal memory, new trust boundary, production store, or general governed
     clock. Existing triggers remain intact.
 
+## Delayed-candidate addendum
+
+The delayed-candidate formation trigger subsequently entered accepted SCN-001
+scope. The implementation forms one `formed_non_active` candidate only after
+the exact direct realization, retained focused-drill closure, active production
+trial, bounded policy, current spontaneous context, and retained user-governed
+controls are present. It keeps candidate formation distinct from activation,
+prohibits behavior influence before activation, and creates no user preference,
+global policy, durable adaptation, later-use disposition, or output.
+
+The candidate's 15 consumed creator inputs each have an explicit `basis`
+relation. Six epistemically favoring participants additionally have `support`,
+and the direct disposition has separate `transition_ancestry`. Exact replay is
+idempotent, changed or incomplete prefixes fail closed, and independent runs
+cannot share candidate identity. Fresh independent review passed the exact
+workbench stack through `1784bfe`; `d9d76df` records its governance closure.
+
+The bounded trigger is therefore re-triaged without starting external research:
+the owned mechanism remains adequate, while activation and every later behavior
+remain unimplemented and must be assessed separately.
+
 ## Adversarial evidence reviewed
 
 - missing fragments and rewritten fixture meaning do not create a disposition;
@@ -127,8 +148,10 @@ no semantic identity.
 - passive inspection does not allocate order or repair semantic state;
 - prior focused-drill state remains exact, differently scoped, and
   non-superseded after direct realization;
-- no delayed candidate, active delayed trial, global policy, future preference,
-  durable adaptation, formal record, or scoring artifact is produced;
+- the direct checkpoint does not require or infer later-family state; the
+  separately reviewed candidate frontier creates no active delayed trial,
+  global policy, future preference, durable adaptation, formal record, or
+  scoring artifact;
 - independent runs cannot resolve one another's direct-correction identities.
 
 ## Stopping point

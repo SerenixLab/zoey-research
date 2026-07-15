@@ -1,6 +1,6 @@
 # Semantic-State Research Requirement Coverage
 
-Status: `current-frontier closure accepted after independent review`
+Status: `delayed-candidate trigger reassessed after independent review`
 
 Reviewed: `2026-07-15`
 
@@ -21,7 +21,7 @@ milestone acceptance, or independent review.
 | `SST-R04` | Ordinary correction is distinct from deletion, forgetting, redaction, and erasure. | Direct correction creates new state/disposition; prior focused state and history are unchanged. Negative checks exclude destructive overwrite and later-family promotion. | Governed erasure execution is outside this non-persistent selected slice. | `satisfied for ordinary correction`; erasure remains a separate later pressure. |
 | `SST-R05` | ADR-006/007 require exact material basis, current eligibility, and fail-closed invalidity. | Earlier equal-payload correction evidence, wrong current identity, stale activation history, retargeted basis, duplicate creators, direct or focused realization claimant ambiguity, coherently extended simulator-ingestion basis, malformed closure, and changed redelivery fail closed without retained mutation. | Cross-process database concurrency/CAS is not required by this run-scoped path. | `satisfied at current frontier`. |
 | `SST-R06` | Source, basis, support, transition ancestry, actor, and status origin are distinct. | Source actor/relation and evaluation source-binding ledger remain separate from SUT ingestion, creator, basis, disposition, and realization transitions. | Formal behavior-configuration provenance remains gated by `EVAL-004`. | `satisfied at current frontier`. |
-| `SST-R07` | Fixture/inference evidence cannot silently become authority or durable state. | SUT owns interpretation; explicit current user authority creates only exact current-session control/disposition. No delayed candidate, active delayed trial, future preference, global policy, or durable adaptation is created. | Later Zoey-derived delayed-candidate formation requires its own basis and activation path. | `satisfied at current frontier`. |
+| `SST-R07` | Fixture/inference evidence cannot silently become authority or durable state. | SUT owns interpretation. The delayed candidate is Zoey-derived from exact retained basis, remains non-active, and is prohibited from behavior influence. It is not a preference, global policy, or durable adaptation. | Activation requires a separate assessment of the same candidate and all nine predeclared checks. | `satisfied through candidate formation`. |
 | `SST-R08` | Canonical semantics remain independent of storage mechanism. | Run-scoped owned records use opaque identities and semantic relations; no XTDB, SQL, snapshot-token, graph, or vendor type enters the SUT contract. | Export/migration evidence is deferred until a durable store or repository boundary is proposed. | `satisfied for this workbench`; replaceability pressure remains future-triggered. |
 | `SST-R09` | Correction, supersession, narrowing, retirement, revocation, forgetting, redaction, deletion, and erasure are distinct. | V-003 is represented as scoped coexistence. The checkpoint rejects a false cross-scope supersession edge and asserts that no other lifecycle meaning was created. | The other actions remain separate, unimplemented behaviors rather than aliases. | `satisfied for the relationship actually required`. |
 | `SST-R10` | Silent last-write-wins and cyclic self-validation are forbidden. | Competing current correction evidence creates no disposition; multiple SUT outputs are not rescued by the harness; indirect, partial, duplicate, or outcome-selected realization claims cannot produce a checkpoint winner; malformed or false conflict/supersession evidence cannot pass. | General retained conflict objects, concurrent successor transitions, and cyclic non-convergence are deferred. | `boundedly satisfied`; limitations are explicit and no framework gap is demonstrated. |
@@ -46,6 +46,9 @@ milestone acceptance, or independent review.
   `adf756a6765e433047574acec1d40e8da74005f4`.
 - The wider semantic-state capability family is not complete; it is dormant
   and trigger-bound until a condition below fires.
+- Delayed-candidate formation fired a bounded trigger and was independently
+  reviewed through `1784bfe`. Re-triage found no concrete external-mechanism
+  gap; delayed activation is the next engineering frontier.
 
 ## Reopen triggers
 

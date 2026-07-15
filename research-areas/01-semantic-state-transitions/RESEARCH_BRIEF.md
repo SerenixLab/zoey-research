@@ -1,12 +1,12 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `V-003 closure accepted; wider family dormant and trigger-bound`
+Status: `delayed-candidate trigger re-triaged; wider research dormant`
 
 Reviewed: `2026-07-15`
 
 Capability area: `1` Semantic state and transitions
 
-Current engineering adjacency: `SCN-001` direct current-session correction
+Current engineering adjacency: `SCN-001` delayed-correction activation
 
 ## Decision
 
@@ -66,3 +66,9 @@ The external feedback identified the right family and a strong first candidate. 
 The V-003 investigation is accepted closed because the corrected implementation demonstrates the applicable semantic distinctions, exact retained history, stale/substituted-basis rejection, realization-ownership ambiguity rejection, exact realization-ingestion parity, lineage/provenance separation, boundary preservation, narrow conflict behavior, and non-promotion limits without leaving a concrete mechanism uncertainty. Independent review of workbench commit `99772a8` was blocking because direct and focused realization claimant enumeration remained incomplete. Review of `3efb7ca` was also blocking because evaluation accepted a coherently extended simulator-ingestion participant set that the SUT rejected. Exact corrective commit `adf756a6765e433047574acec1d40e8da74005f4` closed that parity defect and received a fresh passing independent review.
 
 Acceptance does not mean that every lifecycle action is implemented or that the whole semantic-state problem is complete. This family is dormant and trigger-bound. Reopen it when a trigger in [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) fires. Any future experiment still requires a concrete empirical question, minimal Zoey-owned contract, explicit non-goals, negative cases, predeclared invariants, applicable question re-triage, and a governed disposable boundary.
+
+## Delayed-candidate trigger reassessment
+
+The accepted delayed-candidate frontier fired one recorded reopen trigger. Workbench commits `a8aeff5` and `1784bfe` implemented exact formation of a separate, non-active candidate from raw retained bundle facts. The candidate has no behavior influence, preserves the exact future activation requirements, and uses typed lineage: every consumed participant is basis, epistemically favoring evidence is support, and the direct disposition is separately recorded as transition ancestry. Fresh independent review of the exact stack through `1784bfe` passed; governance closure is recorded at `d9d76df`.
+
+This pressure did not expose an unanswered mechanism question. The owned explicit transition model represented formation, immutable non-active state, provenance, replay, and run isolation without a storage, statechart, graph, or temporal-database dependency. External candidate review and the contingent XTDB experiment therefore remain dormant. The next engineering frontier is activation of this exact candidate under the nine predeclared checks; that frontier must be implemented and re-triaged before later use begins.
