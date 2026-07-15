@@ -5,11 +5,15 @@ classification: external-capability-candidate
 classifications:
   - architecture-reference
   - pattern-extraction-source
-  - mechanism-candidate
+contingent_classifications:
+  - classification: mechanism-candidate
+    trigger: >
+      A concrete temporal-projection or stale-basis mechanism question
+      remains unanswered after the SCN-001 direct-correction implementation.
 reviewed_at: 2026-07-15
 
 disposition:
-  status: researching
+  status: source-reviewed
   adopted_dependency: false
   vendored_source: false
   cloned_source: false

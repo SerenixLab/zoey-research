@@ -1,6 +1,6 @@
 # XTDB External Capability Assessment
 
-Status: `researching`  
+Status: `source-reviewed`
 Priority: `high`  
 Reviewed: `2026-07-15`  
 Register ID: `EXT-STATE-001`  
@@ -9,7 +9,7 @@ Active workbench: `no`
 
 ## Decision
 
-XTDB is the strongest first architecture and pattern-extraction reference for corrected-history versus as-known-at-the-time projections. Keep it in source-bounded review; do not adopt it, clone it into Zoey, create a workbench, or treat bitemporality as Zoey's semantic model.
+[`XTDB`](https://github.com/xtdb/xtdb) is the strongest initial shortlist candidate for the corrected-history, as-known projection, and repeatable-basis responsibility. Its bounded source review is complete. Retain it as an architecture and pattern-extraction reference with only a contingent mechanism classification; do not adopt it, clone it into Zoey, create a workbench, or treat bitemporality as Zoey's semantic model.
 
 The useful extraction is narrow:
 
@@ -177,8 +177,8 @@ current selected-slice adjacency: high
 semantic completeness:           low
 mechanism adoption evidence:      none
 operational evidence for Zoey:    none
-action now:                       finish pattern review; no experiment yet
+action now:                       apply extracted invariants to direct correction
 adoption now:                     no
 ```
 
-See [`SOURCES.lock.yml`](SOURCES.lock.yml) for the exact inspected revision and files.
+See [`SOURCES.lock.yml`](SOURCES.lock.yml) for the exact inspected revision and files, and [`../../research-areas/01-semantic-state-transitions/EXTRACTED_PATTERNS.md`](../../research-areas/01-semantic-state-transitions/EXTRACTED_PATTERNS.md) for the bounded research extraction.

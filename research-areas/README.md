@@ -6,4 +6,4 @@ They are working research frames, not architecture, roadmap, adoption, or workbe
 
 Active areas:
 
-- [`01-semantic-state-transitions`](01-semantic-state-transitions/RESEARCH_BRIEF.md)
+- [`01-semantic-state-transitions`](01-semantic-state-transitions/RESEARCH_BRIEF.md): active family with completed XTDB source review, authoritative [`extracted patterns`](01-semantic-state-transitions/EXTRACTED_PATTERNS.md), and [`requirement coverage`](01-semantic-state-transitions/REQUIREMENT_COVERAGE.md).

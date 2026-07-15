@@ -23,7 +23,7 @@ The external feedback identified the right family and a strong first candidate. 
 2. **Time is not a fixed five-column schema.** Occurrence, observation, claimed validity, effective interval, expiry, refresh, supersession, revocation, reconciliation, decision, activation, and recording time are state-dependent meanings. Each record should carry only the applicable typed meanings; XTDB's two database timelines do not replace the rest.
 3. **“Belief” is too broad for acceptance criteria.** Research must distinguish current accepted state, current applicable state, corrected history, as-known-at-the-time history, attributed assertions, inferences, authority, and external projections.
 4. **History preservation has a governed erasure exception.** Correction, supersession, retirement, forgetting, revocation, redaction, and deletion remain distinct. Audit preservation cannot override privacy or deletion obligations, and an erasure mechanism cannot be reported as ordinary correction.
-5. **The proposed composition is a responsibility/source map, not an architecture.** XState-like guards, XTDB-like bitemporality, event-store concurrency, Graphiti-like episode lineage, and TerminusDB-like diffs may be useful independently. There is no basis to combine or adopt all of them.
+5. **The proposed composition is a responsibility/source map, not an architecture.** [`XState`](https://github.com/statelyai/xstate)-like guards, [`XTDB`](https://github.com/xtdb/xtdb)-like bitemporality, event-store concurrency, [`Graphiti`](https://github.com/getzep/graphiti)-like episode lineage, and [`TerminusDB`](https://github.com/terminusdb/terminusdb)-like diffs may be useful independently. There is no basis to combine or adopt all of them.
 6. **The candidate workflow must follow the register.** Raw repository names remain in this working shortlist. A candidate is registered when it enters source-bounded review and always before cloning, a workbench, or an adoption proposal. XTDB is registered as `EXT-STATE-001`; the other names are not yet registered candidates.
 7. **A fixed monthly watch is premature.** Reviewed dates, exact source locks, and candidate-specific watch topics are sufficient now. Refresh before an experiment or decision, after a material upstream release/license change, or when an assessment has become too old for the claim being made. Do not create five comparison records or recurring monitoring merely to make the shortlist look active.
 
@@ -52,11 +52,12 @@ The external feedback identified the right family and a strong first candidate. 
 ## Research sequence
 
 1. Preserve the capability-bounded Iris/Yuki audit in [`LEGACY_AUDIT.md`](LEGACY_AUDIT.md).
-2. Complete the pinned XTDB review in [`../../external-capabilities/xtdb/ASSESSMENT.md`](../../external-capabilities/xtdb/ASSESSMENT.md).
-3. Review XState next if lifecycle guards or path generation remain an unanswered mechanism question after the direct-correction implementation.
-4. Review Graphiti only at the candidate/promotion boundary: episode lineage and temporal retrieval are useful, but LLM-derived graph mutations cannot be authoritative by default.
-5. Review TerminusDB for inspectable semantic diffs and KurrentDB for expected-basis append patterns only if those responsibilities remain unsatisfied by smaller owned mechanisms.
-6. Reconcile the extracted contracts against SCN-002 authority and operation pressure before claiming generality.
+2. Treat the pinned [`XTDB`](https://github.com/xtdb/xtdb) review in [`../../external-capabilities/xtdb/ASSESSMENT.md`](../../external-capabilities/xtdb/ASSESSMENT.md) as source-review complete.
+3. Apply [`EXTRACTED_PATTERNS.md`](EXTRACTED_PATTERNS.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) as implementation and test pressure on SCN-001 direct current-session correction.
+4. After that implementation exists, compare its actual gaps against `SST-R01` through `SST-R12`.
+5. Register [`XState`](https://github.com/statelyai/xstate), activate the contingent XTDB experiment, or review [`Graphiti`](https://github.com/getzep/graphiti) only if a concrete mechanism question remains unanswered.
+6. Review [`TerminusDB`](https://github.com/terminusdb/terminusdb) or [`KurrentDB`](https://github.com/kurrent-io/KurrentDB) only if their narrower diff or append-basis responsibilities remain unsatisfied by smaller owned mechanisms.
+7. Reconcile any extracted contract proposed as general against SCN-002 authority and operation pressure before claiming generality.
 
 ## Completion basis
 

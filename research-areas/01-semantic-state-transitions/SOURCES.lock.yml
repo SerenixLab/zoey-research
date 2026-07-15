@@ -13,7 +13,7 @@ registered_candidates:
   - register_id: EXT-STATE-001
     repository: https://github.com/xtdb/xtdb
     reviewed_commit: e98610e1de12074d17943aa282b4a0391539de33
-    role: first-deep-review-candidate
+    role: source-reviewed-temporal-projection-reference
 
 unregistered_search_shortlist:
   - repository: https://github.com/statelyai/xstate
