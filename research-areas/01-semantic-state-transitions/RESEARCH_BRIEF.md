@@ -1,19 +1,22 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `active research direction`  
-Reviewed: `2026-07-15`  
-Capability area: `1` Semantic state and transitions  
+Status: `boundedly closed at the current engineering frontier`
+
+Reviewed: `2026-07-15`
+
+Capability area: `1` Semantic state and transitions
+
 Current engineering adjacency: `SCN-001` direct current-session correction
 
 ## Decision
 
-Adopt this as the first capability-family research direction. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create a workbench, or broaden the current SCN-001 milestone from this research alone.
+Close this capability family at the implemented V-003 engineering frontier and retain it as a trigger-driven reference. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
 
-The near-term question is narrower than a general memory architecture:
+The implementation question was narrower than a general memory architecture:
 
-> Which external patterns help Zoey preserve semantic distinctions, correction history, temporal meaning, transition basis, and inspectable projections while direct current-session correction is implemented?
+> Can Zoey preserve semantic distinctions, differently scoped history, temporal meaning, exact transition basis, and inspectable current applicability through direct current-session correction with its owned mechanism?
 
-The family is valuable because the canonical state/control model already requires non-destructive history, typed temporal meanings, basis re-evaluation, and visible conflict handling. External research should pressure and operationalize those requirements, not redefine them.
+The answer is yes for the current frontier. The evidence and limits are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Exact retained objects and transitions are sufficient for V-003; general corrected/as-known queries, successor lifecycle actions, and general conflict/non-convergence remain trigger-bound later pressure.
 
 ## Feedback assessment
 
@@ -49,26 +52,17 @@ The external feedback identified the right family and a strong first candidate. 
 - formal SCN-001 evaluation, scoring, or compatibility claims;
 - treating SCN-001-derived abstractions as general Zoey architecture before SCN-002 counter-pressure.
 
-## Research sequence
+## Completed sequence
 
-1. Preserve the capability-bounded Iris/Yuki audit in [`LEGACY_AUDIT.md`](LEGACY_AUDIT.md).
-2. Treat the pinned [`XTDB`](https://github.com/xtdb/xtdb) review in [`../../external-capabilities/xtdb/ASSESSMENT.md`](../../external-capabilities/xtdb/ASSESSMENT.md) as source-review complete.
-3. Apply [`EXTRACTED_PATTERNS.md`](EXTRACTED_PATTERNS.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) as implementation and test pressure on SCN-001 direct current-session correction.
-4. After that implementation exists, compare its actual gaps against `SST-R01` through `SST-R12`.
-5. Register [`XState`](https://github.com/statelyai/xstate), activate the contingent XTDB experiment, or review [`Graphiti`](https://github.com/getzep/graphiti) only if a concrete mechanism question remains unanswered.
-6. Review [`TerminusDB`](https://github.com/terminusdb/terminusdb) or [`KurrentDB`](https://github.com/kurrent-io/KurrentDB) only if their narrower diff or append-basis responsibilities remain unsatisfied by smaller owned mechanisms.
-7. Reconcile any extracted contract proposed as general against SCN-002 authority and operation pressure before claiming generality.
+1. The capability-bounded Iris/Yuki audit is preserved in [`LEGACY_AUDIT.md`](LEGACY_AUDIT.md).
+2. The pinned [`XTDB`](https://github.com/xtdb/xtdb) review in [`../../external-capabilities/xtdb/ASSESSMENT.md`](../../external-capabilities/xtdb/ASSESSMENT.md) is source-review complete.
+3. The extracted patterns pressured the implemented SCN-001 direct current-session correction and adversarial tests.
+4. [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) reassesses every `SST-R01`–`SST-R12` requirement.
+5. No concrete gap justifies registering [`XState`](https://github.com/statelyai/xstate), activating the XTDB experiment, or registering [`Graphiti`](https://github.com/getzep/graphiti).
+6. [`TerminusDB`](https://github.com/terminusdb/terminusdb), [`KurrentDB`](https://github.com/kurrent-io/KurrentDB), and the WorldDB paper remain unregistered references because no narrower unsatisfied responsibility requires them.
 
-## Completion basis
+## Closure and reopening
 
-This research family is ready to recommend an experiment only when it has:
+The family closes because the current implementation demonstrates the applicable semantic distinctions, exact retained history, stale/substituted-basis rejection, lineage/provenance separation, boundary preservation, narrow conflict behavior, and non-promotion limits without leaving a concrete mechanism uncertainty.
 
-- a concrete mechanism question not answerable from pinned source review;
-- a minimal Zoey-owned semantic contract and explicit non-goals;
-- legacy comparison and at least one negative case;
-- synthetic fixtures for late correction, stale basis, narrowing, conflict, and erasure;
-- predeclared projection and transition invariants;
-- applicable open-question re-triage;
-- a disposable or governed workbench boundary with no production or milestone claim.
-
-Until then, the outcome is pattern extraction and requirements refinement only.
+Closure is not a claim that every lifecycle action is implemented. Reopen this family when a trigger in [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) fires. Any future experiment still requires a concrete empirical question, minimal Zoey-owned contract, explicit non-goals, negative cases, predeclared invariants, applicable question re-triage, and a governed disposable boundary.

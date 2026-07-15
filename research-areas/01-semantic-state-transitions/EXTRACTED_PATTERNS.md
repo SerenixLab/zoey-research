@@ -1,6 +1,6 @@
 # Extracted Semantic-State And Temporal-Transition Patterns
 
-Status: `bounded source-review extraction complete; research family active`
+Status: `bounded source-review extraction complete; current frontier closed`
 Reviewed: `2026-07-15`
 Primary external source: [`XTDB`](https://github.com/xtdb/xtdb) at the revision locked in [`../../external-capabilities/xtdb/SOURCES.lock.yml`](../../external-capabilities/xtdb/SOURCES.lock.yml)
 
@@ -73,19 +73,17 @@ Iris supplies the strongest implemented legacy lifecycle discipline inspected fo
 
 No evidence supports combining the systems or importing their topology into Zoey.
 
-## Remaining unanswered questions
+## Conclusions from direct-correction pressure
 
-- Does direct correction require a general statechart mechanism, or are explicit owned transitions and tests sufficient?
-- Can the existing selected-slice run-scoped store provide sufficient immutable transition history and passive projections?
-- Does this SCN-001 milestone need a true corrected-history/as-known distinction, or only retained semantic objects and exact transition evidence?
-- Can stale-basis rejection be implemented with smaller owned mechanisms over the existing dependency identity contract?
-- Which correction relationships are required now: supersession, narrowing, contradiction, revocation, coexistence, or retirement?
-- Does any unanswered mechanism question actually justify the contingent XTDB experiment?
-- Can conflict and non-convergence be represented without introducing a general graph or statechart framework?
+- Explicit owned transitions and exact closure tests are sufficient; no general statechart mechanism is required.
+- The selected-slice run-scoped store preserves enough immutable object, relation, order, and transition evidence for passive reconstruction.
+- V-003 requires exact retained objects and transitions, not a corrected-history/as-known query pair, because the new spontaneous-session control does not correct the earlier focused-drill instruction's truth or scope.
+- Stale, substituted, ambiguous, and retargeted bases fail closed with the owned dependency-identity mechanism.
+- The required relationship is scoped coexistence. Supersession, narrowing, contradiction, revocation, and retirement are deliberately not asserted.
+- Competing current evidence withholds a disposition and multiple outputs are not arbitrated. General conflict objects and cyclic non-convergence remain later pressure.
+- No unanswered mechanism question justifies the XTDB experiment, XState registration, or Graphiti registration.
 
-These questions should be answered from the direct-correction implementation pressure before another candidate is registered.
-
-## Immediate SCN-001 pressure
+## Preserved SCN-001 invariants
 
 Apply the following as implementation and test invariants only:
 
@@ -100,4 +98,4 @@ Apply the following as implementation and test invariants only:
 9. Research mechanisms must not expose fixture/oracle-only data to the SUT.
 10. No XTDB type, SQL term, snapshot token, or database topology enters the SCN-001 semantic contract from this research alone.
 
-After direct correction exists, record observed gaps against [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Register [`XState`](https://github.com/statelyai/xstate), activate the contingent XTDB experiment, or review [`Graphiti`](https://github.com/getzep/graphiti) only if that comparison leaves a concrete unanswered mechanism question.
+Observed evidence and deferred gaps are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Register [`XState`](https://github.com/statelyai/xstate), activate the contingent XTDB experiment, or register [`Graphiti`](https://github.com/getzep/graphiti) only if a recorded reopen trigger creates a concrete unanswered mechanism question.

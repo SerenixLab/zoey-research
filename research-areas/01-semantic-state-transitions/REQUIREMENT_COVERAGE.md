@@ -1,50 +1,60 @@
 # Semantic-State Research Requirement Coverage
 
-Status: `source-review coverage baseline; research family active`
+Status: `boundedly closed at the current engineering frontier`
+
 Reviewed: `2026-07-15`
+
 Requirements: [`REQUIREMENTS.md`](REQUIREMENTS.md)
 
-The judgments below combine current Zoey/SCN-001 evidence, the bounded legacy audit, and the completed [`XTDB`](https://github.com/xtdb/xtdb) source review. They are qualitative research judgments, not implementation acceptance, formal evaluation, or compatibility scores.
+Implementation review: [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md)
 
-| Requirement | Zoey / current SCN-001 evidence | Iris evidence | Yuki evidence | XTDB evidence | Current coverage judgment | Remaining gap | Next evidence or trigger |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `SST-R01` semantic roles and lifecycle states | Canonical SCM and selected-slice ADRs own compositional semantic roles; the workbench implements the chain through focused-drill outcome, not direct correction. | `strong` implemented but narrower memory-candidate transition table and fail-closed guards. | `partial` current playbook fields; no mutation lifecycle. | `missing` semantic-role meaning; rows and versions are storage constructs. | `strong` specification, `partial` current implementation. | Direct correction and general conflict relationships remain unimplemented; a universal lifecycle must still be avoided. | Implement direct correction with distinct objects and typed relations; register [`XState`](https://github.com/statelyai/xstate) only if explicit owned transitions/tests prove insufficient. |
-| `SST-R02` typed temporal meanings | SCM explicitly distinguishes multiple time meanings; selected-slice evidence preserves occurrence/observation/order where applicable. | `partial` expiry clocks and record timestamps, not a general temporal contract. | `weak` snapshot version/update metadata only. | `strong` two-dimensional storage pattern, `conditional` mapping to Zoey meanings. | `partial`. | Decision, activation, recording, effective, correction, and supersession meanings are not yet pressured together in direct correction. | Add only the time meanings required by the correction path; do not reproduce a fixed bitemporal schema. |
-| `SST-R03` current, corrected-history, and as-known projections | SCM requires non-flattened history; the selected slice has retained state and passive inspection but no demonstrated corrected/as-known projection pair. | `missing` native corrected/as-known reconstruction in the inspected capability. | `missing`; exposes a current playbook snapshot. | `strong` reviewed pattern for corrected versus as-known history and repeatable bases. | `conditional`, with no Zoey implementation evidence. | It is unresolved whether this milestone needs all three projections or exact retained objects plus transition evidence. | Decide from the implemented correction path. Activate the XTDB experiment only if the required distinction cannot be proven with smaller owned mechanisms. |
-| `SST-R04` non-destructive correction and governed erasure | SCM distinguishes correction from deletion/forgetting/erasure; direct correction remains unimplemented. | `partial` source revocation, denial, deletion, expiry, and audit evidence; no general successor correction lifecycle. | `missing` implemented correction history. | `strong` non-destructive version pattern plus explicit `ERASE` exception. | `partial`. | Need correction identity, target binding, retained predecessor, and separate erasure evidence in the selected slice. | Pressure ordinary correction and a negative erasure case in SCN-001 tests without adding personal-state custody. |
-| `SST-R05` stale-basis rejection | SCM and ADR-007 require material basis validity and stable dependency identity; the direct-correction transition is not yet implemented. | `partial` illegal-transition guards and source-revocation invalidation. | `missing`. | `conditional` transaction `ASSERT` mechanism; external and semantic basis remain application-owned. | `partial`. | No end-to-end evidence yet that a correction or activation based on superseded selected-slice state fails closed. | Add stale-target and stale-activation cases to direct-correction tests; experiment only if atomicity cannot be achieved locally. |
-| `SST-R06` source lineage versus transition provenance | Selected-slice state and dependency ADRs strongly distinguish source, basis, transition ancestry, and inspection projections. | `strong` source refs, hashes, audit refs, policy snapshots, and review promotion for its bounded domain. | `partial` provenance-shaped fields without demonstrated correction transition provenance. | `weak` transaction metadata and row history cannot reconstruct semantic permission. | `strong` current contract, `partial` correction evidence. | Direct correction must bind source evidence separately from actor/policy/configuration/guard permission. | Inspect correction transition evidence after implementation; review [`Graphiti`](https://github.com/getzep/graphiti) only if episode-to-derived-state lineage remains materially unsolved. |
-| `SST-R07` candidate/promotion authority boundary | SCM and selected-slice SUT boundary keep inference and fixture/oracle facts from becoming authority. | `strong` implemented review-bound promotion and non-promotable states. | `partial` planned human gate; limited runtime evidence. | `not applicable` as a semantic authority solution. | `strong` at the current frontier. | Direct correction must not silently promote a situational instruction into a durable trial or adaptation. | Add negative promotion tests to the direct-correction path. |
-| `SST-R08` storage independence and replaceability | Canonical semantics and scenario-provisional workbench boundary avoid a final store or repository decision. | `partial` useful SQLite-backed patterns but legacy-specific shapes require adaptation. | `weak` JSON playbook snapshot is readable but not a transition/export contract. | `conditional`; SQL helps access, but temporal rows and snapshot tokens could leak into identity. | `partial`. | No tested semantic export/migration contract exists, and none is required merely to finish direct correction. | Keep correction contracts store-neutral; require export evidence only before a mechanism experiment or durable boundary proposal. |
-| `SST-R09` distinct correction relationships | SCM explicitly distinguishes correction, narrowing, supersession, retirement, revocation, forgetting, redaction, deletion, and erasure. | `partial` several terminal dispositions, but the implementation is narrower than its specification. | `missing` implemented relationship semantics. | `weak` storage update/delete/erase mechanics do not define Zoey lifecycle meaning. | `partial`. | The minimum relationship set for direct correction is not yet demonstrated. | Implement only relationships required by the scenario and record excluded meanings; do not alias unimplemented relations. |
-| `SST-R10` conflict and non-convergence | SCM rejects last-write-wins and cyclic self-validation; ADR-007 names conflict relations. | `weak` general conflict/non-convergence behavior is absent from the inspected implementation. | `missing`. | `weak`; serialization prevents some write races but does not resolve semantic conflict or cycles. | `missing` as end-to-end behavior. | Concurrent contradictory corrections, coexistence, and unstable dependency cycles remain materially incomplete. | Add the narrow conflict case required by direct correction. A general statechart or graph framework is not yet justified. |
-| `SST-R11` SUT/evaluation boundary | Accepted selected-slice ADRs, closed ingress, state-origin checks, and passive inspection provide strong current evidence. | `not applicable` to the current Zoey boundary. | `not applicable`. | `not applicable` if retained as research-only infrastructure reference. | `strong` at the current frontier. | New correction fixtures could still leak oracle meaning if adapted incorrectly. | Extend existing boundary tests with correction fixtures; do not expose research/database terms to the SUT contract. |
-| `SST-R12` behavior-configuration identity | Selected-slice dependency identity exists; the formal behavior-configuration record remains deferred under `EVAL-004`. | `partial` configuration/provenance patterns across legacy components. | `partial` playbook version evidence only. | `missing` behavior-configuration meaning; query snapshots cover database state only. | `not applicable at current frontier`, gated. | A formal behavioral comparison would require exact model, prompt, runtime, policy, context, and dependency configuration. | Re-triage `EVAL-004` before the first formal comparison or evaluation record, not for this source-review closure. |
+The judgments combine canonical contracts, SCN-001 engineering/conformance
+evidence, the bounded legacy audit, and the completed XTDB source review. They
+are qualitative research judgments, not formal evaluation, compatibility,
+milestone acceptance, or independent review.
+
+| Requirement | Canonical/specification coverage | Current implementation and conformance evidence | Missing or intentionally deferred behavior | Current conclusion |
+| --- | --- | --- | --- | --- |
+| `SST-R01` | SCM and selected-slice ADRs define compositional roles and lifecycle meaning. | Raw V-003 communication, attribution, scoped correction/control, direct disposition, realization, focused instruction/disposition/outcome, candidate, and active trial remain distinct; exact family and creator checks reject collapse. | Later lifecycle families remain unimplemented. | `satisfied at current frontier`; no general statechart needed. |
+| `SST-R02` | SCM distinguishes occurrence, observation, effectivity, decision, activation, recording, correction, and other time meanings. | V-003 chronology, occurrence order, interaction/ingestion order, created/effective order, focused day 135, and spontaneous day 138 are preserved without treating any one field as semantic truth. | Supersession/revocation/reconciliation time is deferred until those transitions exist. | `satisfied for applicable meanings`; no fixed bitemporal schema. |
+| `SST-R03` | SCM requires non-flattened history and permits distinct current/corrected/as-known projections when needed. | Passive inspection retains both differently scoped instructions and their transitions; the direct checkpoint reconstructs current applicability without overwriting history. | A true late correction of prior asserted content and longitudinal corrected/as-known query pair are deferred. | `exact retained objects are sufficient for this milestone`; XTDB experiment not triggered. |
+| `SST-R04` | Ordinary correction is distinct from deletion, forgetting, redaction, and erasure. | Direct correction creates new state/disposition; prior focused state and history are unchanged. Negative checks exclude destructive overwrite and later-family promotion. | Governed erasure execution is outside this non-persistent selected slice. | `satisfied for ordinary correction`; erasure remains a separate later pressure. |
+| `SST-R05` | ADR-006/007 require exact material basis, current eligibility, and fail-closed invalidity. | Earlier equal-payload correction evidence, wrong current identity, stale activation history, retargeted basis, duplicate creators, malformed closure, and changed redelivery fail closed without retained mutation. | Cross-process database concurrency/CAS is not required by this run-scoped path. | `satisfied at current frontier`. |
+| `SST-R06` | Source, basis, support, transition ancestry, actor, and status origin are distinct. | Source actor/relation and evaluation source-binding ledger remain separate from SUT ingestion, creator, basis, disposition, and realization transitions. | Formal behavior-configuration provenance remains gated by `EVAL-004`. | `satisfied at current frontier`. |
+| `SST-R07` | Fixture/inference evidence cannot silently become authority or durable state. | SUT owns interpretation; explicit current user authority creates only exact current-session control/disposition. No delayed candidate, active delayed trial, future preference, global policy, or durable adaptation is created. | Later Zoey-derived delayed-candidate formation requires its own basis and activation path. | `satisfied at current frontier`. |
+| `SST-R08` | Canonical semantics remain independent of storage mechanism. | Run-scoped owned records use opaque identities and semantic relations; no XTDB, SQL, snapshot-token, graph, or vendor type enters the SUT contract. | Export/migration evidence is deferred until a durable store or repository boundary is proposed. | `satisfied for this workbench`; replaceability pressure remains future-triggered. |
+| `SST-R09` | Correction, supersession, narrowing, retirement, revocation, forgetting, redaction, deletion, and erasure are distinct. | V-003 is represented as scoped coexistence. The checkpoint rejects a false cross-scope supersession edge and asserts that no other lifecycle meaning was created. | The other actions remain separate, unimplemented behaviors rather than aliases. | `satisfied for the relationship actually required`. |
+| `SST-R10` | Silent last-write-wins and cyclic self-validation are forbidden. | Competing current correction evidence creates no disposition; multiple SUT outputs are not rescued by the harness; malformed or false conflict/supersession evidence cannot pass the checkpoint. | General retained conflict objects, concurrent successor transitions, and cyclic non-convergence are deferred. | `boundedly satisfied`; limitations are explicit and no framework gap is demonstrated. |
+| `SST-R11` | ADR-005/008 and the profile define closed ingress, public-boundary evidence, simulator isolation, and passive inspection. | Fixture projection strips evaluation meaning; SUT owns behavior selection; simulator copies the selected request and reports fidelity; checkpoint/capture are passive; dependency gates reject SUT-to-evaluation paths. | Future fixture and simulator roles require the same protections. | `satisfied at current frontier`. |
+| `SST-R12` | Formal behavioral evidence must bind exact effective configuration and re-triage `EVAL-004`. | This work adds engineering/conformance evidence only and no behavior-configuration or formal comparison record. | Exact model/prompt/runtime/policy/dependency identity remains deferred until formal comparison. | `not applicable at current frontier`; `EVAL-004` remains gated. |
 
 ## Bounded conclusion
 
-- Zoey owns the semantic-role, authority, and selected-slice boundary definitions.
-- Iris supplies the strongest implemented legacy lifecycle discipline inspected for this family.
-- Yuki supplies limited current-snapshot evidence and a useful negative/reference case, not correction-history coverage.
-- XTDB supplies the strongest reviewed corrected-history/as-known and repeatable-basis pattern, but does not solve authority, epistemic status, source eligibility, lifecycle meaning, or complete provenance.
-- Conflict and non-convergence remain materially incomplete.
-- Neither a general statechart framework nor an XTDB mechanism experiment is currently justified.
-- `SST-R12` remains gated by `EVAL-004` if formal behavioral comparison begins.
+- The owned explicit transition mechanism is adequate for V-003 and its
+  adversarial pressure.
+- Exact retained objects plus transitions are sufficient; the milestone does
+  not need a corrected-history/as-known query pair.
+- Conflict handling is deliberately narrow: ambiguity withholds action and no
+  last-write winner is created. General conflict/non-convergence remains later
+  semantic pressure.
+- XState registration, the XTDB experiment, and Graphiti registration are not
+  justified by an actual remaining mechanism gap.
+- `SST-R12` remains honestly gated by `EVAL-004` if formal comparison begins.
+- Area 1 is closed at the current engineering frontier and becomes active again
+  only when a recorded trigger below fires.
 
-## Evidence triggers
+## Reopen triggers
 
-### Register XState
-
-Register [`XState`](https://github.com/statelyai/xstate) only if the implemented direct-correction path reveals a concrete need for hierarchical/concurrent lifecycle modeling, executable guard composition, or path generation that the existing explicit transition and test approach cannot satisfy cleanly.
-
-### Activate the XTDB experiment
-
-Activate the contingent XTDB plan only if SCN-001 requires a demonstrable corrected-history/as-known distinction or atomic stale-basis behavior that the run-scoped owned store cannot provide without duplicating unsafe temporal logic. Record the exact empirical question before any clone or workbench.
-
-### Review Graphiti
-
-Register and review [`Graphiti`](https://github.com/getzep/graphiti) only if episode-to-derived-fact lineage, temporal contradiction candidates, or later temporal retrieval becomes a live requirement after the candidate/promotion boundary is preserved.
-
-### Close this capability family without another candidate
-
-The family may close without another external review if direct correction satisfies the applicable `SST-R01`–`SST-R11` invariants, `SST-R12` remains honestly deferred, conflict limitations are explicit, and no concrete mechanism question remains. Source-review completeness alone does not close the family today.
+- hierarchical/concurrent lifecycle or path pressure makes explicit guards and
+  tests materially unreviewable (`XState` review trigger);
+- a real late correction requires distinct corrected-history and as-known
+  query results, repeatable historical basis, or atomic stale-basis behavior
+  that the owned mechanism cannot safely provide (XTDB experiment trigger);
+- episode-to-derived-state lineage, temporal retrieval, or contradiction
+  candidates become a live responsibility after the authority boundary is
+  preserved (`Graphiti` review trigger);
+- delayed-candidate activation, later-use applicability, successor correction,
+  narrowing, retirement, revocation, general conflict/non-convergence, or
+  governed erasure enters accepted SCN-001 scope;
+- formal behavioral comparison triggers `EVAL-004`, or a durable project/store,
+  memory, trust-boundary, or clock proposal triggers its governing question.

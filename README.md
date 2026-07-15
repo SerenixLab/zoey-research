@@ -18,7 +18,7 @@ Research placement means:
 
 Active capability-family research:
 
-- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): first Priority A research family, bounded to pattern extraction and current-frontier support.
+- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): boundedly closed at the implemented V-003 frontier, with trigger-driven reopening.
 
 Current external capability records:
 
