@@ -16,9 +16,9 @@ Research placement means:
 - [`CANDIDATE_REGISTER.md`](CANDIDATE_REGISTER.md): the authoritative index of external candidates that have entered review.
 - [`tools/check_research.py`](tools/check_research.py): offline structural conformance for candidate records, research families, relative links, and repository artifact hygiene.
 
-Active capability-family research:
+Capability-family research:
 
-- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): V-003 current-frontier closure proposed, with corrected independent review pending and trigger-driven reopening if accepted.
+- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): V-003 current-frontier closure accepted after independent review; the wider family is dormant and trigger-bound.
 
 Current external capability records:
 

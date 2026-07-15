@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `current-frontier closure proposed; corrected independent review pending`
+Status: `current-frontier closure accepted after independent review`
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baseline: `3efb7ca057369dd835f70fc120ced1ac5c175e0f` on `main`
+Reviewed workbench evidence baseline: `adf756a6765e433047574acec1d40e8da74005f4` on local `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -22,9 +22,11 @@ instruction/disposition lineage or the current attributed assertion. Commit
 subsequent independent review was also blocking: evaluation still ignored
 direct realization claims owned indirectly through `payload.requestedRef` and
 trusted the focused outcome-selected realization transition without proving it
-was the unique focused claimant. The reviewed evidence baseline above contains
-the second corrective implementation; fresh independent review of that exact
-commit remains pending.
+was the unique focused claimant. Commit `3efb7ca057369dd835f70fc120ced1ac5c175e0f`
+corrected those defects, but fresh review found that evaluation could accept a
+coherently extended direct simulator-ingestion participant set rejected by the
+SUT. The evidence baseline above closes that final predicate-parity defect and
+received a fresh passing independent review.
 
 ## Implemented pressure
 
@@ -93,10 +95,9 @@ no semantic identity.
 9. **Register and review Graphiti?** No. Episode extraction, temporal retrieval,
    and LLM-produced contradiction candidates are not responsibilities of this
    trajectory, and its lineage is reconstructable.
-10. **Can Area 1 close without another candidate?** The current evidence
-    supports that recommendation: no concrete unanswered mechanism question
-    requires another candidate. Acceptance of the closure remains pending a
-    fresh independent review of the corrected workbench baseline.
+10. **Can Area 1 close without another candidate?** Yes at the V-003 frontier.
+    No concrete unanswered mechanism question requires another candidate, and
+    fresh independent review accepted the corrected workbench baseline.
 11. **What remains deferred to later SCN-001 pressure?** Successor correction,
     narrowing, retirement, revocation, general conflict/non-convergence,
     delayed-candidate formation and activation, later-use applicability,
@@ -120,6 +121,8 @@ no semantic identity.
 - indirect `payload.requestedRef` realization claims, extra claiming facts,
   partial relations/transitions, duplicate evidence, combined ambiguity, and a
   focused outcome pointer selecting one of two claimants cannot pass;
+- a coherently extended direct simulator interaction, ingestion, and basis set
+  cannot pass when the SUT requires the exact singleton realization fact;
 - changed redelivery is rejected atomically; exact redelivery is idempotent;
 - passive inspection does not allocate order or repair semantic state;
 - prior focused-drill state remains exact, differently scoped, and
@@ -130,24 +133,24 @@ no semantic identity.
 
 ## Stopping point
 
-`CP-DIRECT-CORRECTION-REALIZED` is sufficient to propose this Area 1 conclusion because
+`CP-DIRECT-CORRECTION-REALIZED` is sufficient to accept this Area 1 conclusion because
 the successful path and its attacks establish the applicable role, identity,
 scope, authority, history, stale-basis, provenance, boundary, and
 non-promotion properties. Implementing the delayed-correction family would add
 new SCN-001 behavior, not answer a remaining mechanism question from this
-trajectory. If independent review accepts this evidence, the V-003
-investigation becomes dormant and trigger-bound; it should reopen when one of
-the deferred pressures becomes an accepted frontier or evidence trigger.
+trajectory. Independent review accepted this evidence. The V-003 investigation
+is dormant and trigger-bound; it should reopen when one of the deferred
+pressures becomes an accepted frontier or evidence trigger.
 
 ## Verification basis
 
 - `npm run check`: all local workbench gates passed after the realization-
-  ownership correction, including 244 tests.
-- `node --test scn001_eval/test/harness.test.js`: 146 focused evaluation tests
-  passed after the correction.
+  ingestion parity correction, including 245 tests.
+- `npm run check:boundary`: all 152 boundary tests passed after the correction.
 - `python3 tools/check_research.py`: research conformance passed on the final
   research tree with 2 candidates, 1 family, and 19 Markdown files.
 
-Fresh independent review of corrected workbench commit
-`3efb7ca057369dd835f70fc120ced1ac5c175e0f` remains pending. No passing review
-of that commit is claimed.
+Fresh independent review passed exact corrected workbench commit
+`adf756a6765e433047574acec1d40e8da74005f4`. That review is engineering and
+conformance evidence only; it does not establish formal evaluation,
+compatibility, scoreability, milestone completion, or production readiness.
