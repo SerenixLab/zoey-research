@@ -18,7 +18,7 @@ Research placement means:
 
 Capability-family research:
 
-- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): delayed-candidate trigger re-triaged after independently reviewed implementation; activation is the next frontier and wider research remains dormant.
+- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): delayed activation re-triaged after independently reviewed implementation; later-use applicability is next and wider research remains dormant.
 
 Current external capability records:
 

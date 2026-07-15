@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `delayed-candidate trigger reassessed after independent review`
+Status: `delayed activation trigger reassessed after independent review`
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe` on local `main`
+Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962` on local `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -125,9 +125,24 @@ idempotent, changed or incomplete prefixes fail closed, and independent runs
 cannot share candidate identity. Fresh independent review passed the exact
 workbench stack through `1784bfe`; `d9d76df` records its governance closure.
 
-The bounded trigger is therefore re-triaged without starting external research:
-the owned mechanism remains adequate, while activation and every later behavior
-remain unimplemented and must be assessed separately.
+At that checkpoint, the bounded trigger was re-triaged without starting external
+research: the owned mechanism remained adequate, while activation and every
+later behavior still required separate assessment.
+
+## Delayed-activation addendum
+
+The activation trigger subsequently entered scope. The corrected implementation
+retains three distinct identities: the unchanged non-active candidate, a separate
+nine-check assessment, and a separate active delayed trial. Exact basis includes
+the candidate, correction and realization lineage, current context/chronology,
+bounded policy, retained production trial, and selected controls. No user-response
+fact is activation basis, and no later behavior is created.
+
+Independent review of `d9d76df..4cf6af5` was blocking because the checkpoint
+accepted a competing retention-basis record rejected by the SUT. Commit
+`a355962` closed that singleton-parity gap; fresh review then passed the complete
+stack. The owned mechanism remains sufficient, and later-use applicability now
+constitutes the next separate pressure.
 
 ## Adversarial evidence reviewed
 
@@ -149,7 +164,7 @@ remain unimplemented and must be assessed separately.
 - prior focused-drill state remains exact, differently scoped, and
   non-superseded after direct realization;
 - the direct checkpoint does not require or infer later-family state; the
-  separately reviewed candidate frontier creates no active delayed trial,
+  separately reviewed activation frontier creates no later-use disposition,
   global policy, future preference, durable adaptation, formal record, or
   scoring artifact;
 - independent runs cannot resolve one another's direct-correction identities.

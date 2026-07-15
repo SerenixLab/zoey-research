@@ -1,12 +1,12 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `delayed-candidate trigger re-triaged; wider research dormant`
+Status: `delayed activation trigger re-triaged; wider research dormant`
 
 Reviewed: `2026-07-15`
 
 Capability area: `1` Semantic state and transitions
 
-Current engineering adjacency: `SCN-001` delayed-correction activation
+Current engineering adjacency: `SCN-001` later-use applicability
 
 ## Decision
 
@@ -71,4 +71,10 @@ Acceptance does not mean that every lifecycle action is implemented or that the 
 
 The accepted delayed-candidate frontier fired one recorded reopen trigger. Workbench commits `a8aeff5` and `1784bfe` implemented exact formation of a separate, non-active candidate from raw retained bundle facts. The candidate has no behavior influence, preserves the exact future activation requirements, and uses typed lineage: every consumed participant is basis, epistemically favoring evidence is support, and the direct disposition is separately recorded as transition ancestry. Fresh independent review of the exact stack through `1784bfe` passed; governance closure is recorded at `d9d76df`.
 
-This pressure did not expose an unanswered mechanism question. The owned explicit transition model represented formation, immutable non-active state, provenance, replay, and run isolation without a storage, statechart, graph, or temporal-database dependency. External candidate review and the contingent XTDB experiment therefore remain dormant. The next engineering frontier is activation of this exact candidate under the nine predeclared checks; that frontier must be implemented and re-triaged before later use begins.
+This pressure did not expose an unanswered mechanism question. The owned explicit transition model represented formation, immutable non-active state, provenance, replay, and run isolation without a storage, statechart, graph, or temporal-database dependency. External candidate review and the contingent XTDB experiment therefore remain dormant.
+
+## Delayed-activation trigger reassessment
+
+The next bounded trigger was exercised by workbench stack `d9d76df..a355962`, with governance closure at `6728a9d`. The SUT now retains the unchanged candidate, a separate assessment that recomputes all nine checks from exact material basis, and a separate active delayed-correction trial with exact candidate-and-assessment ancestry. Activation does not consume a second user approval, does not treat V-003 as future-trial acceptance, and creates no preference, global policy, durable adaptation, or later behavior.
+
+Independent review first blocked stack `d9d76df..4cf6af5` because evaluation accepted a competing retention-basis record that the SUT rejected. The corrected evaluator requires the same global singleton retention identity as the SUT. Fresh review of `d9d76df..a355962` passed with no further blocker. This trigger again exposed no external-mechanism gap: explicit owned transitions remain reviewable and exact. Wider research stays dormant; `DP-LATER-USE` applicability and scope counterpressure are the next engineering frontier.
