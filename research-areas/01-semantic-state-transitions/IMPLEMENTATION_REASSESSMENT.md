@@ -4,7 +4,7 @@ Status: `current-frontier closure proposed; corrected independent review pending
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baseline: `99772a8343c4fb01ba85618fbace6b0c8f20b263` on `main`
+Reviewed workbench evidence baseline: `3efb7ca057369dd835f70fc120ced1ac5c175e0f` on `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -17,9 +17,14 @@ The initial implementation commit is
 `1cab3e1eeb9cc30e8dd2b8d7d8d75ffa38ae1f5e`. Independent review of the combined
 stack through `11789d80c34ef2b2b9a03baae5e94770d1798a00` was blocking because
 the evaluation checkpoint did not completely reconstruct the focused
-instruction/disposition lineage or the current attributed assertion. The
-reviewed evidence baseline above contains the corrective implementation; fresh
-independent review of that correction remains pending.
+instruction/disposition lineage or the current attributed assertion. Commit
+`99772a8343c4fb01ba85618fbace6b0c8f20b263` corrected those defects, but its
+subsequent independent review was also blocking: evaluation still ignored
+direct realization claims owned indirectly through `payload.requestedRef` and
+trusted the focused outcome-selected realization transition without proving it
+was the unique focused claimant. The reviewed evidence baseline above contains
+the second corrective implementation; fresh independent review of that exact
+commit remains pending.
 
 ## Implemented pressure
 
@@ -46,10 +51,14 @@ attribution, and complete retained focused-drill prefix. It independently
 checks D-001/D-002 source and ingestion identity, focused instruction and
 disposition creators and relations, focused realization/outcome closure, and
 the current assertion creator, source, communication basis, status, and order.
-It rejects malformed predecessor state, false cross-scope lifecycle relations,
-source or target substitution, duplicate state, bad order, missing basis,
-fidelity mismatch, and later-family state. Exact replay is idempotent and
-independent runs share no semantic identity.
+It now enumerates direct realization facts, relations, and recording
+transitions using the SUT's direct and `payload.requestedRef` ownership paths,
+and requires the focused outcome's fact and transition to be the unique
+claimants for that disposition. It rejects malformed predecessor state, false
+cross-scope lifecycle relations, source or target substitution, duplicate or
+partial realization ownership, bad order, missing basis, fidelity mismatch,
+and later-family state. Exact replay is idempotent and independent runs share
+no semantic identity.
 
 ## Explicit mechanism decisions
 
@@ -108,6 +117,9 @@ independent runs share no semantic identity.
   relations, and post-hoc closure repair do not silently select a winner;
 - simulator mismatch is retained as supplied evidence but cannot pass the
   checkpoint;
+- indirect `payload.requestedRef` realization claims, extra claiming facts,
+  partial relations/transitions, duplicate evidence, combined ambiguity, and a
+  focused outcome pointer selecting one of two claimants cannot pass;
 - changed redelivery is rejected atomically; exact redelivery is idempotent;
 - passive inspection does not allocate order or repair semantic state;
 - prior focused-drill state remains exact, differently scoped, and
@@ -129,12 +141,13 @@ the deferred pressures becomes an accepted frontier or evidence trigger.
 
 ## Verification basis
 
-- `npm run check`: all local workbench gates passed after the checkpoint-parity
-  correction, including 231 tests.
-- `node --test scn001_eval/test/harness.test.js`: 133 focused evaluation tests
+- `npm run check`: all local workbench gates passed after the realization-
+  ownership correction, including 244 tests.
+- `node --test scn001_eval/test/harness.test.js`: 146 focused evaluation tests
   passed after the correction.
 - `python3 tools/check_research.py`: research conformance passed on the final
   research tree with 2 candidates, 1 family, and 19 Markdown files.
 
-Fresh independent review of corrected workbench commit `99772a8` remains
-pending. No passing review of that commit is claimed.
+Fresh independent review of corrected workbench commit
+`3efb7ca057369dd835f70fc120ced1ac5c175e0f` remains pending. No passing review
+of that commit is claimed.
