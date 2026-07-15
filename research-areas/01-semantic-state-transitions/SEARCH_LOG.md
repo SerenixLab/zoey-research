@@ -32,4 +32,4 @@ Date: `2026-07-15`
 - The four unregistered repository entries remain working-notes evidence even though their cited commits were verified.
 - Community issue reports were treated only as risk signals, not authoritative capability facts.
 - No repositories were cloned, no weights or artifacts were downloaded, and no benchmark was run.
-- [`XTDB`](https://github.com/xtdb/xtdb)'s reviewed revision did not change during closure; the existing pinned evidence was sufficient to produce the extracted-pattern and requirement-coverage records.
+- [`XTDB`](https://github.com/xtdb/xtdb)'s reviewed revision did not change during reassessment; the existing pinned evidence was sufficient to produce the extracted-pattern and requirement-coverage records.

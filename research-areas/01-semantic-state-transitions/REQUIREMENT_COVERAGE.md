@@ -1,6 +1,6 @@
 # Semantic-State Research Requirement Coverage
 
-Status: `boundedly closed at the current engineering frontier`
+Status: `current-frontier closure proposed; corrected independent review pending`
 
 Reviewed: `2026-07-15`
 
@@ -40,8 +40,12 @@ milestone acceptance, or independent review.
 - XState registration, the XTDB experiment, and Graphiti registration are not
   justified by an actual remaining mechanism gap.
 - `SST-R12` remains honestly gated by `EVAL-004` if formal comparison begins.
-- Area 1 is closed at the current engineering frontier and becomes active again
-  only when a recorded trigger below fires.
+- The Area 1 investigation needed for V-003 is implementation-complete and its
+  current-frontier closure is proposed. Acceptance remains pending fresh
+  independent review of corrected workbench commit `99772a8`.
+- The wider semantic-state capability family is not complete; if the proposal
+  is accepted, it becomes dormant and trigger-bound until a condition below
+  fires.
 
 ## Reopen triggers
 

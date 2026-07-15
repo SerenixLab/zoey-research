@@ -18,7 +18,7 @@ Research placement means:
 
 Active capability-family research:
 
-- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): boundedly closed at the implemented V-003 frontier, with trigger-driven reopening.
+- [`Semantic state, correction, and temporal transitions`](research-areas/01-semantic-state-transitions/RESEARCH_BRIEF.md): V-003 current-frontier closure proposed, with corrected independent review pending and trigger-driven reopening if accepted.
 
 Current external capability records:
 

@@ -1,16 +1,25 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `bounded conclusion at the current engineering frontier`
+Status: `current-frontier closure proposed; corrected independent review pending`
 
 Reviewed: `2026-07-15`
 
-Workbench baseline: `1cab3e1eeb9cc30e8dd2b8d7d8d75ffa38ae1f5e` on `main`
+Reviewed workbench evidence baseline: `99772a8343c4fb01ba85618fbace6b0c8f20b263` on `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
-hardening that revalidates the retained focused-drill closure. The evidence is
+hardening and checkpoint-parity correction that revalidate the complete
+retained focused-drill and V-003 attribution closures. The evidence is
 engineering and conformance evidence only. It is not a formal evaluation,
 compatibility result, milestone determination, or independent review.
+
+The initial implementation commit is
+`1cab3e1eeb9cc30e8dd2b8d7d8d75ffa38ae1f5e`. Independent review of the combined
+stack through `11789d80c34ef2b2b9a03baae5e94770d1798a00` was blocking because
+the evaluation checkpoint did not completely reconstruct the focused
+instruction/disposition lineage or the current attributed assertion. The
+reviewed evidence baseline above contains the corrective implementation; fresh
+independent review of that correction remains pending.
 
 ## Implemented pressure
 
@@ -32,11 +41,15 @@ reuses exact retained control facts, but it does not mutate or supersede the
 earlier focused-drill immediate-correction instruction, disposition,
 realization, outcome, active trial, or their lineage.
 
-The evaluation checkpoint reconstructs the exact direct closure and the exact
-retained focused-drill prefix. It rejects a malformed prior outcome, false
-cross-scope lifecycle relation, source or target substitution, duplicate state,
-bad order, missing basis, fidelity mismatch, and later-family state. Exact
-replay is idempotent and independent runs share no semantic identity.
+The evaluation checkpoint reconstructs the exact direct closure, exact V-003
+attribution, and complete retained focused-drill prefix. It independently
+checks D-001/D-002 source and ingestion identity, focused instruction and
+disposition creators and relations, focused realization/outcome closure, and
+the current assertion creator, source, communication basis, status, and order.
+It rejects malformed predecessor state, false cross-scope lifecycle relations,
+source or target substitution, duplicate state, bad order, missing basis,
+fidelity mismatch, and later-family state. Exact replay is idempotent and
+independent runs share no semantic identity.
 
 ## Explicit mechanism decisions
 
@@ -71,8 +84,10 @@ replay is idempotent and independent runs share no semantic identity.
 9. **Register and review Graphiti?** No. Episode extraction, temporal retrieval,
    and LLM-produced contradiction candidates are not responsibilities of this
    trajectory, and its lineage is reconstructable.
-10. **Can Area 1 close without another candidate?** Yes, at the current
-    engineering frontier. No concrete unanswered mechanism question remains.
+10. **Can Area 1 close without another candidate?** The current evidence
+    supports that recommendation: no concrete unanswered mechanism question
+    requires another candidate. Acceptance of the closure remains pending a
+    fresh independent review of the corrected workbench baseline.
 11. **What remains deferred to later SCN-001 pressure?** Successor correction,
     narrowing, retirement, revocation, general conflict/non-convergence,
     delayed-candidate formation and activation, later-use applicability,
@@ -103,21 +118,23 @@ replay is idempotent and independent runs share no semantic identity.
 
 ## Stopping point
 
-`CP-DIRECT-CORRECTION-REALIZED` is sufficient for this Area 1 conclusion because
+`CP-DIRECT-CORRECTION-REALIZED` is sufficient to propose this Area 1 conclusion because
 the successful path and its attacks establish the applicable role, identity,
 scope, authority, history, stale-basis, provenance, boundary, and
 non-promotion properties. Implementing the delayed-correction family would add
 new SCN-001 behavior, not answer a remaining mechanism question from this
-trajectory. Area 1 should reopen when one of the deferred pressures becomes an
-accepted implementation frontier or an evidence trigger below fires.
+trajectory. If independent review accepts this evidence, the V-003
+investigation becomes dormant and trigger-bound; it should reopen when one of
+the deferred pressures becomes an accepted frontier or evidence trigger.
 
 ## Verification basis
 
-- `npm run check`: all local workbench gates passed after checkpoint hardening,
-  including 171 tests.
-- `node --test scn001_eval/test/harness.test.js`: 73 focused evaluation tests
-  passed after checkpoint hardening.
+- `npm run check`: all local workbench gates passed after the checkpoint-parity
+  correction, including 231 tests.
+- `node --test scn001_eval/test/harness.test.js`: 133 focused evaluation tests
+  passed after the correction.
 - `python3 tools/check_research.py`: research conformance passed on the final
   research tree with 2 candidates, 1 family, and 19 Markdown files.
 
-Fresh independent review of the workbench diff remains pending.
+Fresh independent review of corrected workbench commit `99772a8` remains
+pending. No passing review of that commit is claimed.

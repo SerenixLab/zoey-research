@@ -1,6 +1,6 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `boundedly closed at the current engineering frontier`
+Status: `V-003 closure proposed; corrected independent review pending`
 
 Reviewed: `2026-07-15`
 
@@ -10,13 +10,13 @@ Current engineering adjacency: `SCN-001` direct current-session correction
 
 ## Decision
 
-Close this capability family at the implemented V-003 engineering frontier and retain it as a trigger-driven reference. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
+Propose closure of the Area 1 investigation required for the implemented V-003 engineering frontier. If fresh independent review accepts the corrected evidence baseline, retain the wider capability family as dormant and trigger-bound. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
 
 The implementation question was narrower than a general memory architecture:
 
 > Can Zoey preserve semantic distinctions, differently scoped history, temporal meaning, exact transition basis, and inspectable current applicability through direct current-session correction with its owned mechanism?
 
-The answer is yes for the current frontier. The evidence and limits are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Exact retained objects and transitions are sufficient for V-003; general corrected/as-known queries, successor lifecycle actions, and general conflict/non-convergence remain trigger-bound later pressure.
+The corrected implementation supports a yes answer for the current frontier, subject to fresh independent review. The evidence and limits are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Exact retained objects and transitions are sufficient for V-003; general corrected/as-known queries, successor lifecycle actions, and general conflict/non-convergence remain trigger-bound later pressure.
 
 ## Feedback assessment
 
@@ -61,8 +61,8 @@ The external feedback identified the right family and a strong first candidate. 
 5. No concrete gap justifies registering [`XState`](https://github.com/statelyai/xstate), activating the XTDB experiment, or registering [`Graphiti`](https://github.com/getzep/graphiti).
 6. [`TerminusDB`](https://github.com/terminusdb/terminusdb), [`KurrentDB`](https://github.com/kurrent-io/KurrentDB), and the WorldDB paper remain unregistered references because no narrower unsatisfied responsibility requires them.
 
-## Closure and reopening
+## Proposed closure and reopening
 
-The family closes because the current implementation demonstrates the applicable semantic distinctions, exact retained history, stale/substituted-basis rejection, lineage/provenance separation, boundary preservation, narrow conflict behavior, and non-promotion limits without leaving a concrete mechanism uncertainty.
+Current evidence supports closure of the V-003 investigation because the corrected implementation demonstrates the applicable semantic distinctions, exact retained history, stale/substituted-basis rejection, lineage/provenance separation, boundary preservation, narrow conflict behavior, and non-promotion limits without leaving a concrete mechanism uncertainty. The proposal is not accepted until corrected workbench commit `99772a8` receives a fresh passing independent review.
 
-Closure is not a claim that every lifecycle action is implemented. Reopen this family when a trigger in [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) fires. Any future experiment still requires a concrete empirical question, minimal Zoey-owned contract, explicit non-goals, negative cases, predeclared invariants, applicable question re-triage, and a governed disposable boundary.
+Acceptance would not mean that every lifecycle action is implemented or that the whole semantic-state problem is complete. It would make this family dormant and trigger-bound. Reopen it when a trigger in [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md) fires. Any future experiment still requires a concrete empirical question, minimal Zoey-owned contract, explicit non-goals, negative cases, predeclared invariants, applicable question re-triage, and a governed disposable boundary.

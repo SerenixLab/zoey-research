@@ -6,4 +6,4 @@ They are working research frames, not architecture, roadmap, adoption, or workbe
 
 Active areas:
 
-- [`01-semantic-state-transitions`](01-semantic-state-transitions/RESEARCH_BRIEF.md): boundedly closed at the V-003 engineering frontier, with completed XTDB source review, authoritative [`extracted patterns`](01-semantic-state-transitions/EXTRACTED_PATTERNS.md), [`implementation reassessment`](01-semantic-state-transitions/IMPLEMENTATION_REASSESSMENT.md), and [`requirement coverage`](01-semantic-state-transitions/REQUIREMENT_COVERAGE.md).
+- [`01-semantic-state-transitions`](01-semantic-state-transitions/RESEARCH_BRIEF.md): V-003 current-frontier closure proposed pending corrected independent review; the wider family remains trigger-bound, with completed XTDB source review, authoritative [`extracted patterns`](01-semantic-state-transitions/EXTRACTED_PATTERNS.md), [`implementation reassessment`](01-semantic-state-transitions/IMPLEMENTATION_REASSESSMENT.md), and [`requirement coverage`](01-semantic-state-transitions/REQUIREMENT_COVERAGE.md).
