@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `delayed activation trigger reassessed after independent review`
+Status: `later-use and realization trigger reassessed after independent review`
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962` on local `main`
+Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962`; later use and realization `6f0cb02` on local `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -98,11 +98,11 @@ no semantic identity.
 10. **Can Area 1 close without another candidate?** Yes at the V-003 frontier.
     No concrete unanswered mechanism question requires another candidate, and
     fresh independent review accepted the corrected workbench baseline.
-11. **What remains deferred to later SCN-001 pressure?** Successor correction,
-    narrowing, retirement, revocation, general conflict/non-convergence,
-    delayed-candidate formation and activation, later-use applicability,
-    longitudinal corrected/as-known queries, and governed erasure behavior.
-    These are not missing mechanisms for V-003.
+11. **What remains deferred to later SCN-001 pressure?** Intervention-
+    conditioned outcome, grounded explanation, successor correction, narrowing,
+    retirement, revocation, general conflict/non-convergence, longitudinal
+    corrected/as-known queries, and governed erasure behavior. These are not
+    missing mechanisms for V-003 or the reviewed later-use frontier.
 12. **Are open-question triggers activated?** No. This work introduces no formal
     comparison (`EVAL-004`), durable project boundary (`REPO-001`), persistent
     personal memory, new trust boundary, production store, or general governed
@@ -144,6 +144,24 @@ accepted a competing retention-basis record rejected by the SUT. Commit
 stack. The owned mechanism remains sufficient, and later-use applicability now
 constitutes the next separate pressure.
 
+## Later-use and realization addendum
+
+The next trigger subsequently entered scope. Canonical spontaneous production
+now rechecks the exact same-run active delayed trial, creates a bounded later
+behavior disposition, and records matched simulator realization without
+changing trial state. Focused-drill opt-in independently rechecks its own
+same-run trial, records `not_applicable`, and creates no disposition,
+realization, narrowing, supersession, retirement, or erasure.
+
+Independent review of `6728a9d..8285c83` was blocking because the raw state
+reference lacked an ADR-007 lineage-preserving projection and typed
+`projection_of` relation, while the SUT could accept a drill assertion whose
+creator pointer did not equal its unique actual creator. Commit `6f0cb02`
+closed both gaps with a separate exact projection record and SUT/evaluation
+creator parity; fresh review then passed `6728a9d..6f0cb02`. The owned mechanism
+remains sufficient. Outcome interpretation and explanation provenance now form
+the next separate pressure.
+
 ## Adversarial evidence reviewed
 
 - missing fragments and rewritten fixture meaning do not create a disposition;
@@ -163,10 +181,13 @@ constitutes the next separate pressure.
 - passive inspection does not allocate order or repair semantic state;
 - prior focused-drill state remains exact, differently scoped, and
   non-superseded after direct realization;
-- the direct checkpoint does not require or infer later-family state; the
-  separately reviewed activation frontier creates no later-use disposition,
-  global policy, future preference, durable adaptation, formal record, or
-  scoring artifact;
+- later-use projection rule/view/effective state, creator identity, typed
+  `projection_of`/`basis` relations, applicability, disposition, and realization
+  fail closed under missing, retargeted, backdated, duplicated, or substituted
+  evidence;
+- the canonical later path creates no outcome, global policy, future preference,
+  durable adaptation, formal record, or scoring artifact, while drill opt-in
+  remains explicitly inapplicable without invented lifecycle change;
 - independent runs cannot resolve one another's direct-correction identities.
 
 ## Stopping point
@@ -192,3 +213,7 @@ Fresh independent review passed exact corrected workbench commit
 `adf756a6765e433047574acec1d40e8da74005f4`. That review is engineering and
 conformance evidence only; it does not establish formal evaluation,
 compatibility, scoreability, milestone completion, or production readiness.
+
+Fresh independent review also passed corrected later-use stack
+`6728a9d..6f0cb02` after 36 focused checks, 100 SUT state tests, 207 boundary
+tests, and all 307 aggregate tests passed. Governance closure is `ae0eba5`.

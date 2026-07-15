@@ -1,12 +1,12 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `delayed activation trigger re-triaged; wider research dormant`
+Status: `later-use and realization trigger re-triaged; wider research dormant`
 
 Reviewed: `2026-07-15`
 
 Capability area: `1` Semantic state and transitions
 
-Current engineering adjacency: `SCN-001` later-use applicability
+Current engineering adjacency: `SCN-001` intervention-conditioned outcome and explanation
 
 ## Decision
 
@@ -78,3 +78,9 @@ This pressure did not expose an unanswered mechanism question. The owned explici
 The next bounded trigger was exercised by workbench stack `d9d76df..a355962`, with governance closure at `6728a9d`. The SUT now retains the unchanged candidate, a separate assessment that recomputes all nine checks from exact material basis, and a separate active delayed-correction trial with exact candidate-and-assessment ancestry. Activation does not consume a second user approval, does not treat V-003 as future-trial acceptance, and creates no preference, global policy, durable adaptation, or later behavior.
 
 Independent review first blocked stack `d9d76df..4cf6af5` because evaluation accepted a competing retention-basis record that the SUT rejected. The corrected evaluator requires the same global singleton retention identity as the SUT. Fresh review of `d9d76df..a355962` passed with no further blocker. This trigger again exposed no external-mechanism gap: explicit owned transitions remain reviewable and exact. Wider research stays dormant; `DP-LATER-USE` applicability and scope counterpressure are the next engineering frontier.
+
+## Later-use and realization trigger reassessment
+
+The later-use trigger was exercised by corrected workbench stack `6728a9d..6f0cb02`, with governance closure at `ae0eba5`. Canonical spontaneous production now rechecks the same-run active delayed trial, creates a bounded later behavior disposition, and records exact matched realization. The mandatory focused-drill opt-in branch rechecks its own same-run trial, records `not_applicable`, emits nothing, and creates no disposition, realization, narrowing, supersession, retirement, or erasure.
+
+Independent review first blocked `6728a9d..8285c83` because the opaque fixture state reference lacked ADR-007 projection metadata and a typed `projection_of` closure, and because SUT drill attribution did not require its creator pointer to equal the unique actual creator. Commit `6f0cb02` added a separate lineage-preserving projection and closed creator parity; fresh review passed with no further blocker. The correction exposed a missing local contract, not a need for an external state, graph, workflow, or temporal-database mechanism. Wider research remains dormant. `DP-OUTCOME-UPDATE` and `DP-EXPLAIN` are the next bounded engineering pressure and must preserve intervention conditioning, causal limits, retained support, and uncertainty.
