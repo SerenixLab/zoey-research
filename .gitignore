@@ -1,0 +1,50 @@
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Local environments and caches
+.env
+.env.*
+!.env.example
+.cache/
+.huggingface/
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Generated output
+build/
+dist/
+coverage/
+outputs/
+tmp/
+
+# Disposable upstream checkouts
+checkouts/
+clones/
+
+# Model weights and runtime caches
+models/
+model-cache/
+weights/
+*.safetensors
+*.ckpt
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Voice references, generated audio, and reusable prompt artifacts
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.qvp
+private-artifacts/

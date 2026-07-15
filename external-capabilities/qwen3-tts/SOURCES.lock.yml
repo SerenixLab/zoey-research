@@ -1,0 +1,94 @@
+schema_version: 1
+candidate: qwen3-tts
+register_id: EXT-VOICE-001
+classification: external-capability-candidate
+classifications:
+  - mechanism-candidate
+  - pattern-extraction-source
+  - archive-watch-candidate
+reviewed_at: 2026-07-15
+
+disposition:
+  status: watchlisted
+  adopted_dependency: false
+  vendored_source: false
+  downloaded_weights: false
+  active_workbench: false
+  formal_compatibility_claim: false
+
+authoritative_upstream:
+  repository: https://github.com/QwenLM/Qwen3-TTS
+  branch: main
+  reviewed_commit: 022e286b98fbec7e1e916cb940cdf532cd9f488e
+  role: authoritative-upstream
+  source_license: Apache-2.0
+  package:
+    name: qwen-tts
+    version: 0.1.1
+    python: ">=3.9"
+    constrained_dependencies:
+      transformers: "==4.57.3"
+      accelerate: "==1.12.0"
+
+reference_adapter:
+  repository: https://github.com/flybirdxx/ComfyUI-Qwen-TTS
+  branch: main
+  reviewed_commit: 05f307a44c41afcdd568b836e04cea8b4f18b3f7
+  role: reference-only-experimental-adapter
+  source_license: Apache-2.0
+  adoption_basis: none
+
+models:
+  - id: Qwen/Qwen3-TTS-12Hz-0.6B-Base
+    role: low-latency-voice-clone-candidate
+    weight_revision: null
+    weight_digest: null
+  - id: Qwen/Qwen3-TTS-12Hz-1.7B-Base
+    role: quality-voice-clone-candidate
+    weight_revision: null
+    weight_digest: null
+  - id: Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+    role: low-latency-preset-baseline
+    weight_revision: null
+    weight_digest: null
+  - id: Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+    role: original-voice-design-candidate
+    weight_revision: null
+    weight_digest: null
+  - id: Qwen/Qwen3-TTS-Tokenizer-12Hz
+    role: speech-tokenizer
+    weight_revision: null
+    weight_digest: null
+
+primary_sources:
+  - name: official-repository
+    url: https://github.com/QwenLM/Qwen3-TTS
+  - name: official-release-blog
+    url: https://qwen.ai/blog?id=qwen3tts-0115
+  - name: technical-report
+    url: https://arxiv.org/abs/2601.15621
+  - name: base-model-card
+    url: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
+  - name: voice-design-model-card
+    url: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+  - name: official-python-wrapper-at-reviewed-commit
+    url: https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/qwen_tts/inference/qwen3_tts_model.py
+
+zoey_governance_sources:
+  - path: meta/SYSTEM_THESIS.md
+    relevance: unified identity, disclosure, trust boundaries, derived uses
+  - path: meta/STATE_AND_CONTROL_MODEL.md
+    relevance: provenance, sensitivity, retention, derived artifacts
+  - path: meta/OPEN_QUESTIONS.md
+    relevance: MEM-004, SURF-002, PROD-003 activation gates
+  - path: meta/decisions/ADR-001-first-vertical-slice.md
+    relevance: real voice, STT, and TTS excluded from the current milestone
+
+watch_topics:
+  - official online local serving and genuine streaming audio output
+  - vLLM-Omni online serving support
+  - official Apple Silicon and MPS support
+  - package dependency relaxation and Transformers compatibility
+  - model weight revision or license changes
+  - cloning identity stability and long-utterance consistency
+  - cancellation, interruption, and partial-audio recovery
