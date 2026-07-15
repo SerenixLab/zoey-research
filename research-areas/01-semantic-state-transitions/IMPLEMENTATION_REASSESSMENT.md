@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `later-use and realization trigger reassessed after independent review`
+Status: `outcome and explanation trigger reassessed after independent review`
 
 Reviewed: `2026-07-15`
 
-Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962`; later use and realization `6f0cb02` on local `main`
+Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962`; later use and realization `6f0cb02`; outcome and explanation `b94dfdaaed3b55e94c4972480db73c7430d56eb3` on local `main`
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -98,9 +98,8 @@ no semantic identity.
 10. **Can Area 1 close without another candidate?** Yes at the V-003 frontier.
     No concrete unanswered mechanism question requires another candidate, and
     fresh independent review accepted the corrected workbench baseline.
-11. **What remains deferred to later SCN-001 pressure?** Intervention-
-    conditioned outcome, grounded explanation, successor correction, narrowing,
-    retirement, revocation, general conflict/non-convergence, longitudinal
+11. **What remains deferred to later semantic pressure?** Successor correction,
+    narrowing, retirement, revocation, general conflict/non-convergence, longitudinal
     corrected/as-known queries, and governed erasure behavior. These are not
     missing mechanisms for V-003 or the reviewed later-use frontier.
 12. **Are open-question triggers activated?** No. This work introduces no formal
@@ -159,8 +158,29 @@ reference lacked an ADR-007 lineage-preserving projection and typed
 creator pointer did not equal its unique actual creator. Commit `6f0cb02`
 closed both gaps with a separate exact projection record and SUT/evaluation
 creator parity; fresh review then passed `6728a9d..6f0cb02`. The owned mechanism
-remains sufficient. Outcome interpretation and explanation provenance now form
-the next separate pressure.
+remained sufficient. Outcome interpretation and explanation provenance then
+formed the next separate pressure.
+
+## Outcome and explanation addendum
+
+The last bounded semantic trigger subsequently entered scope. The corrected
+implementation creates a separate intervention-conditioned outcome and
+uncertainty record only after exact later realization, and creates a separate
+grounded explanation plus typed support and limitation records only after the
+outcome closes. `L-005` records only that Zoey received no visible
+co-intervention and is explicitly non-exhaustive for private or unobserved
+causes. The explanation retains relevant stale history while excluding an
+unrelated stale distractor, checks semantic causal limits rather than exact
+wording, and retains no hidden chain-of-thought.
+
+Independent review of `ae0eba57..f4422fa` was blocking because evaluator-owned
+canonical-premise meaning crossed into the SUT and temporal result multiplicity
+was asymmetric. Review through `18365f6` found a remaining evaluator gap for a
+duplicated co-created distractor. Corrected stack `ae0eba57..b94dfda` keeps the
+premise verdict private and closes global shared-result and uncertainty-relation
+parity. Fresh independent review passed. The owned mechanism remains sufficient;
+formal record/configuration identity and scoreability are separate governance
+decisions under `EVAL-004` and `EVAL-005`, not an Area 1 mechanism gap.
 
 ## Adversarial evidence reviewed
 
@@ -185,21 +205,27 @@ the next separate pressure.
   `projection_of`/`basis` relations, applicability, disposition, and realization
   fail closed under missing, retargeted, backdated, duplicated, or substituted
   evidence;
-- the canonical later path creates no outcome, global policy, future preference,
-  durable adaptation, formal record, or scoring artifact, while drill opt-in
-  remains explicitly inapplicable without invented lifecycle change;
+- the canonical later path creates no global policy, future preference, durable
+  adaptation, formal record, or scoring artifact, while drill opt-in remains
+  explicitly inapplicable and creates no outcome or invented lifecycle change;
+- outcome creation rejects evaluator-premise leakage, unmatched behavior,
+  causal promotion, exhaustive co-intervention claims, undeclared uncertainty
+  relations, and incomplete or substituted raw basis;
+- explanation validation rejects missing relevant stale history, duplicated
+  selected or co-created assessment results, unrelated-history promotion,
+  lineage substitution, causal prose, hidden-reasoning claims, and limitation
+  rewrites without mutating retained state;
 - independent runs cannot resolve one another's direct-correction identities.
 
 ## Stopping point
 
-`CP-DIRECT-CORRECTION-REALIZED` is sufficient to accept this Area 1 conclusion because
-the successful path and its attacks establish the applicable role, identity,
-scope, authority, history, stale-basis, provenance, boundary, and
-non-promotion properties. Implementing the delayed-correction family would add
-new SCN-001 behavior, not answer a remaining mechanism question from this
-trajectory. Independent review accepted this evidence. The V-003 investigation
-is dormant and trigger-bound; it should reopen when one of the deferred
-pressures becomes an accepted frontier or evidence trigger.
+The selected engineering chain through `DP-EXPLAIN` is sufficient to accept the
+current Area 1 conclusion because the successful path and its attacks establish
+the applicable role, identity, scope, authority, history, stale-basis,
+provenance, uncertainty, explanation-support, boundary, and non-promotion
+properties. Independent review accepted this evidence. The wider capability
+family is dormant and trigger-bound; it should reopen only when a deferred
+semantic pressure creates a concrete mechanism question.
 
 ## Verification basis
 
@@ -217,3 +243,7 @@ compatibility, scoreability, milestone completion, or production readiness.
 Fresh independent review also passed corrected later-use stack
 `6728a9d..6f0cb02` after 36 focused checks, 100 SUT state tests, 207 boundary
 tests, and all 307 aggregate tests passed. Governance closure is `ae0eba5`.
+
+Fresh independent review passed corrected outcome/explanation stack
+`ae0eba57..b94dfda` after 38 focused checks, 105 SUT state tests, 240 boundary
+tests, and all 345 aggregate tests passed. Governance closure is `4376bcc`.

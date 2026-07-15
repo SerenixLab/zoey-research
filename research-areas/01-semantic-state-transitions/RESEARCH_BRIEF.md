@@ -1,12 +1,12 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `later-use and realization trigger re-triaged; wider research dormant`
+Status: `outcome and explanation trigger re-triaged; wider research dormant`
 
 Reviewed: `2026-07-15`
 
 Capability area: `1` Semantic state and transitions
 
-Current engineering adjacency: `SCN-001` intervention-conditioned outcome and explanation
+Current engineering adjacency: `SCN-001` formal evaluation gate (`EVAL-004` / `EVAL-005`)
 
 ## Decision
 
@@ -83,4 +83,12 @@ Independent review first blocked stack `d9d76df..4cf6af5` because evaluation acc
 
 The later-use trigger was exercised by corrected workbench stack `6728a9d..6f0cb02`, with governance closure at `ae0eba5`. Canonical spontaneous production now rechecks the same-run active delayed trial, creates a bounded later behavior disposition, and records exact matched realization. The mandatory focused-drill opt-in branch rechecks its own same-run trial, records `not_applicable`, emits nothing, and creates no disposition, realization, narrowing, supersession, retirement, or erasure.
 
-Independent review first blocked `6728a9d..8285c83` because the opaque fixture state reference lacked ADR-007 projection metadata and a typed `projection_of` closure, and because SUT drill attribution did not require its creator pointer to equal the unique actual creator. Commit `6f0cb02` added a separate lineage-preserving projection and closed creator parity; fresh review passed with no further blocker. The correction exposed a missing local contract, not a need for an external state, graph, workflow, or temporal-database mechanism. Wider research remains dormant. `DP-OUTCOME-UPDATE` and `DP-EXPLAIN` are the next bounded engineering pressure and must preserve intervention conditioning, causal limits, retained support, and uncertainty.
+Independent review first blocked `6728a9d..8285c83` because the opaque fixture state reference lacked ADR-007 projection metadata and a typed `projection_of` closure, and because SUT drill attribution did not require its creator pointer to equal the unique actual creator. Commit `6f0cb02` added a separate lineage-preserving projection and closed creator parity; fresh review passed with no further blocker. The correction exposed a missing local contract, not a need for an external state, graph, workflow, or temporal-database mechanism. Wider research remained dormant. At that checkpoint, `DP-OUTCOME-UPDATE` and `DP-EXPLAIN` became the next bounded engineering pressure and had to preserve intervention conditioning, causal limits, retained support, and uncertainty.
+
+## Outcome and explanation trigger reassessment
+
+The final bounded semantic trigger was exercised by corrected workbench stack `ae0eba57..b94dfda`, with governance closure at `4376bcc`. The SUT now records an intervention-conditioned association and a separate non-exhaustive uncertainty object after exact matched later behavior. It does not establish causality, long-term efficacy, global preference, fixed learning style, fatigue, or exclusion of private and unobserved causes. A separate explanation transition consumes the complete relevant retained lineage and explicit limitation records; hidden chain-of-thought is neither required nor retained.
+
+Independent review first blocked `ae0eba57..f4422fa` because evaluator-owned canonical-premise fields crossed into and controlled the SUT, and because temporal-assessment result multiplicity differed across the boundary. Review of the first correction through `18365f6` found the inverse co-created-result parity gap. Commits `18365f6` and `b94dfda` keep the premise verdict evaluation-private, close every outbound uncertainty relation, and enforce global shared-result uniqueness in both SUT and evaluation. Fresh review of `ae0eba57..b94dfda` passed after 38 focused checks and all 345 aggregate tests.
+
+This pressure again exposed local boundary and exact-closure defects, not an unanswered storage, statechart, graph, workflow, or temporal-database mechanism question. Wider Area 1 research remains dormant. The next workbench phase is formal evaluation and cannot begin until the separately governed `EVAL-004` and `EVAL-005` decisions are accepted; this research conclusion does not pre-solve them.
