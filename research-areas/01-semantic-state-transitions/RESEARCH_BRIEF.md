@@ -1,6 +1,6 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `implemented-frontier acceptance suspended pending corrective revalidation; wider research dormant`
+Status: `corrected implemented frontier independently revalidated; wider research dormant`
 
 Reviewed: `2026-07-18`
 
@@ -10,7 +10,7 @@ Current engineering adjacency: `SCN-001` Phase 5–6 corrective revalidation bef
 
 ## Decision
 
-The Area 1 external-mechanism conclusion remains unchanged: the owned explicit mechanism has not exposed a responsibility requiring a statechart, temporal database, graph, workflow engine, or retrieval framework. Implemented-frontier acceptance is nevertheless suspended pending fresh independent review of corrective workbench baseline `6cc623b`. Retain the wider capability family as dormant and trigger-bound. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
+The Area 1 external-mechanism conclusion remains unchanged: the owned explicit mechanism has not exposed a responsibility requiring a statechart, temporal database, graph, workflow engine, or retrieval framework. Exact corrective workbench range through `6e57840` passed fresh independent review, and governance closure is recorded at `f3c4129`. Retain the wider capability family as dormant and trigger-bound. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
 
 The implementation question was narrower than a general memory architecture:
 
@@ -93,20 +93,23 @@ Independent review first blocked `ae0eba57..f4422fa` because evaluator-owned can
 
 This pressure again exposed local boundary and exact-closure defects, not an unanswered storage, statechart, graph, workflow, or temporal-database mechanism question. Wider Area 1 research remains dormant. The next workbench phase is formal evaluation and cannot begin until the separately governed `EVAL-004` and `EVAL-005` decisions are accepted; this research conclusion does not pre-solve them.
 
-## Current corrective revalidation suspension
+## Complete corrective revalidation closure
 
 On 2026-07-18, a broader review of complete workbench range
 `7cff4e01e77c55bc136c34441df1c0d39878a2ba..4376bcc0b7618a9f96529305d23514dec4bde4a2`
 found additional creator-pointer, attribution-envelope, processing-atomicity,
 output-ambiguity, explanation-oracle, terminal-cardinality, and parity-drift
-defects. Earlier failed and passing reviews remain historical evidence, but
-their current-frontier acceptance is suspended.
+defects. Earlier failed and passing reviews remain historical evidence; only
+the final complete corrective range attests the current implemented frontier.
 
-Workbench commits `f3af30c` and `6cc623b` implement the bounded correction,
-hostile tests, parity inventory, and blocking governance record. All 384 local
-tests and required gates passed. Fresh independent review of exact corrected
-range `4376bcc0b7618a9f96529305d23514dec4bde4a2..6cc623b` is pending; local
-engineering tests do not substitute for it.
+Workbench commits `f3af30c` through `6e57840` implement the bounded correction,
+hostile tests, parity inventory, blocking governance record, closed explanation
+grammar, exact transition/ingestion/attribution parity, and terminal failure
+transparency. Fresh independent review passed exact corrected range
+`4376bcc0b7618a9f96529305d23514dec4bde4a2..6e57840126b490805032e350e2735e55dabc6b8b`
+after independently running every local gate and all 401 tests. Governance
+closure is `f3c4129`; engineering tests and review remain distinct from formal
+evaluation evidence.
 
 The wider review found defects in the owned implementation, not a missing
 external mechanism responsibility. XState, XTDB experimentation, Graphiti, and
