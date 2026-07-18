@@ -1,10 +1,10 @@
 # Area 1 SCN-001 Implementation Reassessment
 
-Status: `outcome and explanation trigger reassessed after independent review`
+Status: `implemented-frontier acceptance suspended pending corrective revalidation`
 
-Reviewed: `2026-07-15`
+Reviewed: `2026-07-18`
 
-Reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962`; later use and realization `6f0cb02`; outcome and explanation `b94dfdaaed3b55e94c4972480db73c7430d56eb3` on local `main`
+Historical reviewed workbench evidence baselines: direct realization `adf756a6765e433047574acec1d40e8da74005f4`; delayed candidate `1784bfe`; delayed activation `a355962`; later use and realization `6f0cb02`; outcome and explanation `b94dfdaaed3b55e94c4972480db73c7430d56eb3` on local `main`. Current corrective baseline: `6cc623b`, pending fresh independent review.
 
 This reassessment compares the implemented `DP-DIRECT-CORRECTION` trajectory
 with `SST-R01` through `SST-R12`. It includes the accompanying checkpoint
@@ -247,3 +247,36 @@ tests, and all 307 aggregate tests passed. Governance closure is `ae0eba5`.
 Fresh independent review passed corrected outcome/explanation stack
 `ae0eba57..b94dfda` after 38 focused checks, 105 SUT state tests, 240 boundary
 tests, and all 345 aggregate tests passed. Governance closure is `4376bcc`.
+
+## Complete Phase 5–6 corrective revalidation status
+
+A broader 2026-07-18 review of
+`7cff4e01e77c55bc136c34441df1c0d39878a2ba..4376bcc0b7618a9f96529305d23514dec4bde4a2`
+found that the earlier review slices did not cover the complete implemented
+frontier. It deterministically reproduced weak creator-pointer/result
+multiplicity, direct and explanation attribution-envelope drift, partial
+semantic mutation on processing failure, silent collapse of multiple outputs
+to absence, mixed-claim explanation text bypass, and global terminal-family
+cardinality mismatch. The implementing red-team also found analogous strict
+ingestion, focused-attribution, direct-realization, duplicate explanation
+assertion, deterministic retry, and historical ambiguity-expectation gaps.
+
+Corrective workbench commit `f3af30c` strengthens the package-private creator
+and retained-ingestion primitives, aligns SUT and passive evaluator closures,
+adds derived-state rollback while preserving successful ingress, distinguishes
+zero/one/multiple outputs, strengthens the bounded explanation oracle, and
+enforces terminal cardinality. Governance and the complete Phase 5–6 parity
+inventory are recorded at `6cc623b`. Required local workbench gates and all 384
+tests pass.
+
+This is engineering and conformance evidence only. The implementation-frontier
+acceptance recorded above is suspended until a separate qualifying independent
+review passes exact range
+`4376bcc0b7618a9f96529305d23514dec4bde4a2..6cc623b`. The historical reviews
+remain preserved; they are not rewritten as though they found or approved the
+new defects.
+
+No external mechanism conclusion changes. The defects are corrections to the
+owned explicit model and its independent checkpoint tests. Wider Area 1
+research remains dormant, formal evaluation remains blocked by `EVAL-004` and
+`EVAL-005`, and Phase 7 has not started.

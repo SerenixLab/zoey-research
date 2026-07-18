@@ -1,6 +1,6 @@
 # Extracted Semantic-State And Temporal-Transition Patterns
 
-Status: `source-review extraction complete; V-003 conclusion accepted`
+Status: `source-review extraction complete; mechanism conclusion unchanged; implementation acceptance suspended`
 Reviewed: `2026-07-15`
 Primary external source: [`XTDB`](https://github.com/xtdb/xtdb) at the revision locked in [`../../external-capabilities/xtdb/SOURCES.lock.yml`](../../external-capabilities/xtdb/SOURCES.lock.yml)
 

@@ -1,22 +1,22 @@
 # Semantic State, Correction, And Temporal Transition Research Brief
 
-Status: `outcome and explanation trigger re-triaged; wider research dormant`
+Status: `implemented-frontier acceptance suspended pending corrective revalidation; wider research dormant`
 
-Reviewed: `2026-07-15`
+Reviewed: `2026-07-18`
 
 Capability area: `1` Semantic state and transitions
 
-Current engineering adjacency: `SCN-001` formal evaluation gate (`EVAL-004` / `EVAL-005`)
+Current engineering adjacency: `SCN-001` Phase 5–6 corrective revalidation before the formal evaluation gate
 
 ## Decision
 
-Accept closure of the Area 1 investigation required for the implemented V-003 engineering frontier. Fresh independent review passed the corrected evidence baseline. Retain the wider capability family as dormant and trigger-bound. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
+The Area 1 external-mechanism conclusion remains unchanged: the owned explicit mechanism has not exposed a responsibility requiring a statechart, temporal database, graph, workflow engine, or retrieval framework. Implemented-frontier acceptance is nevertheless suspended pending fresh independent review of corrective workbench baseline `6cc623b`. Retain the wider capability family as dormant and trigger-bound. Do not adopt the proposed multi-framework composition as architecture, choose a storage engine, create another workbench, or broaden the current SCN-001 milestone from this research alone.
 
 The implementation question was narrower than a general memory architecture:
 
 > Can Zoey preserve semantic distinctions, differently scoped history, temporal meaning, exact transition basis, and inspectable current applicability through direct current-session correction with its owned mechanism?
 
-The independently reviewed corrected implementation supports a yes answer for the current frontier. The evidence and limits are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). Exact retained objects and transitions are sufficient for V-003; general corrected/as-known queries, successor lifecycle actions, and general conflict/non-convergence remain trigger-bound later pressure.
+Earlier independently reviewed increments supported a yes answer for the then-reviewed frontier. A wider review subsequently found owned integrity and failure-semantics gaps outside those hostile sets. The historical evidence and current suspension are recorded in [`IMPLEMENTATION_REASSESSMENT.md`](IMPLEMENTATION_REASSESSMENT.md) and [`REQUIREMENT_COVERAGE.md`](REQUIREMENT_COVERAGE.md). General corrected/as-known queries, successor lifecycle actions, and general conflict/non-convergence remain trigger-bound later pressure.
 
 ## Feedback assessment
 
@@ -61,7 +61,7 @@ The external feedback identified the right family and a strong first candidate. 
 5. No concrete gap justifies registering [`XState`](https://github.com/statelyai/xstate), activating the XTDB experiment, or registering [`Graphiti`](https://github.com/getzep/graphiti).
 6. [`TerminusDB`](https://github.com/terminusdb/terminusdb), [`KurrentDB`](https://github.com/kurrent-io/KurrentDB), and the WorldDB paper remain unregistered references because no narrower unsatisfied responsibility requires them.
 
-## Accepted closure and reopening
+## Historical accepted closure and reopening
 
 The V-003 investigation is accepted closed because the corrected implementation demonstrates the applicable semantic distinctions, exact retained history, stale/substituted-basis rejection, realization-ownership ambiguity rejection, exact realization-ingestion parity, lineage/provenance separation, boundary preservation, narrow conflict behavior, and non-promotion limits without leaving a concrete mechanism uncertainty. Independent review of workbench commit `99772a8` was blocking because direct and focused realization claimant enumeration remained incomplete. Review of `3efb7ca` was also blocking because evaluation accepted a coherently extended simulator-ingestion participant set that the SUT rejected. Exact corrective commit `adf756a6765e433047574acec1d40e8da74005f4` closed that parity defect and received a fresh passing independent review.
 
@@ -92,3 +92,23 @@ The final bounded semantic trigger was exercised by corrected workbench stack `a
 Independent review first blocked `ae0eba57..f4422fa` because evaluator-owned canonical-premise fields crossed into and controlled the SUT, and because temporal-assessment result multiplicity differed across the boundary. Review of the first correction through `18365f6` found the inverse co-created-result parity gap. Commits `18365f6` and `b94dfda` keep the premise verdict evaluation-private, close every outbound uncertainty relation, and enforce global shared-result uniqueness in both SUT and evaluation. Fresh review of `ae0eba57..b94dfda` passed after 38 focused checks and all 345 aggregate tests.
 
 This pressure again exposed local boundary and exact-closure defects, not an unanswered storage, statechart, graph, workflow, or temporal-database mechanism question. Wider Area 1 research remains dormant. The next workbench phase is formal evaluation and cannot begin until the separately governed `EVAL-004` and `EVAL-005` decisions are accepted; this research conclusion does not pre-solve them.
+
+## Current corrective revalidation suspension
+
+On 2026-07-18, a broader review of complete workbench range
+`7cff4e01e77c55bc136c34441df1c0d39878a2ba..4376bcc0b7618a9f96529305d23514dec4bde4a2`
+found additional creator-pointer, attribution-envelope, processing-atomicity,
+output-ambiguity, explanation-oracle, terminal-cardinality, and parity-drift
+defects. Earlier failed and passing reviews remain historical evidence, but
+their current-frontier acceptance is suspended.
+
+Workbench commits `f3af30c` and `6cc623b` implement the bounded correction,
+hostile tests, parity inventory, and blocking governance record. All 384 local
+tests and required gates passed. Fresh independent review of exact corrected
+range `4376bcc0b7618a9f96529305d23514dec4bde4a2..6cc623b` is pending; local
+engineering tests do not substitute for it.
+
+The wider review found defects in the owned implementation, not a missing
+external mechanism responsibility. XState, XTDB experimentation, Graphiti, and
+the other unregistered references therefore remain dormant. Phase 7 remains
+blocked; `EVAL-004` and `EVAL-005` have not been activated or pre-solved.
