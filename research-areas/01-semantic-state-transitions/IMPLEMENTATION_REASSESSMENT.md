@@ -286,5 +286,5 @@ at `f3c4129` without rewriting the earlier failed reviews.
 
 No external mechanism conclusion changes. The defects are corrections to the
 owned explicit model and its independent checkpoint tests. Wider Area 1
-research remains dormant, formal evaluation remains blocked by `EVAL-004` and
-`EVAL-005`, and Phase 7 has not started.
+research remains dormant, formal evaluation remains blocked by active but
+unresolved `EVAL-004` and `EVAL-005`, and Phase 7 has not started.

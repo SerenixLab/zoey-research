@@ -29,7 +29,7 @@ review of exact corrective baseline `6e57840`, with governance closure at
 | `SST-R09` | Correction, supersession, narrowing, retirement, revocation, forgetting, redaction, deletion, and erasure are distinct. | V-003 remains scoped coexistence. Drill opt-in records only current non-applicability and explicitly creates no narrowing, supersession, retirement, or erasure without evidence for those lifecycle meanings. | The other actions remain separate, unimplemented behaviors rather than aliases. | `satisfied for the relationships actually required`. |
 | `SST-R10` | Silent last-write-wins and cyclic self-validation are forbidden. | Reviewed corrective baseline `6e57840` rejects competing state and terminal families, rolls back failed semantic processing, and raises transparent integrity failure for multiple outputs without harness arbitration. | General retained conflict objects, concurrent successor transitions, and cyclic non-convergence remain deferred. | `satisfied for implemented conflicts`; no framework gap demonstrated. |
 | `SST-R11` | ADR-005/008 and the profile define closed ingress, public-boundary evidence, simulator isolation, and passive inspection. | Fixture projection strips evaluation meaning; SUT owns behavior selection; simulator reports fidelity; corrected checkpoint/capture attacks remain passive; dependency gates reject SUT-to-evaluation paths. | Future fixture/simulator roles require the same protections. | `satisfied for the implemented boundary`. |
-| `SST-R12` | Formal behavioral evidence must bind exact effective configuration and re-triage `EVAL-004`. | This work adds engineering/conformance evidence only and no behavior-configuration or formal comparison record. | Exact model/prompt/runtime/policy/dependency identity remains deferred until formal comparison. | `not applicable at current frontier`; `EVAL-004` remains gated. |
+| `SST-R12` | Formal behavioral evidence must bind exact effective configuration and re-triage `EVAL-004`. | This work adds engineering/conformance evidence only and no behavior-configuration or formal comparison record. | Exact model/prompt/runtime/policy/dependency identity is now under active but unresolved `EVAL-004`. | `not yet satisfied for formal evidence`; no formal record may be created. |
 
 ## Bounded conclusion
 
@@ -42,7 +42,8 @@ review of exact corrective baseline `6e57840`, with governance closure at
   semantic pressure.
 - XState registration, the XTDB experiment, and Graphiti registration are not
   justified by an actual remaining mechanism gap.
-- `SST-R12` remains honestly gated by `EVAL-004` if formal comparison begins.
+- `SST-R12` is now explicitly gated by active `EVAL-004`; formal comparison has
+  not begun.
 - The Area 1 mechanism investigation remains closed. Fresh independent review
   passed exact corrective range `4376bcc..6e57840`; governance closure is
   `f3c4129`. Historical failed and narrower passing reviews remain recorded but

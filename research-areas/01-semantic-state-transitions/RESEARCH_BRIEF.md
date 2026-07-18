@@ -114,4 +114,5 @@ evaluation evidence.
 The wider review found defects in the owned implementation, not a missing
 external mechanism responsibility. XState, XTDB experimentation, Graphiti, and
 the other unregistered references therefore remain dormant. Phase 7 remains
-blocked; `EVAL-004` and `EVAL-005` have not been activated or pre-solved.
+blocked; `EVAL-004` and `EVAL-005` are now active but unresolved and are not
+pre-solved by this research.
